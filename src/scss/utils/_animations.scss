@@ -1,0 +1,14 @@
+@mixin animate-str($strlength) {
+    .animate-char {
+        white-space: pre;
+        display: inline-block;
+        
+        animation: fadeInX 1s backwards;
+    }
+
+    @for $i from 0 to $strlength {
+        .animate-char._#{$i} {
+            animation-delay: $i * 0.05s;
+        }
+    }
+}

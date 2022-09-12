@@ -1,0 +1,33 @@
+@keyframes fadeInY {
+    0% {opacity: 0; transform: translateY(3em);}
+    100% {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes fadeInX {
+    0% {opacity: 0; transform: translateX(3em);}
+    100% {opacity: 1; transform: translateX(0);}
+}
+
+@keyframes showItemsUp {
+    0% {opacity: 0; transform: translateY(100vh);}
+    100% {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes svgProgress {
+    0% {stroke-dashoffset: 472;}
+    100% {stroke-dashoffset: 0;}
+}
+
+@keyframes grow {
+    0% {width: 0px; transform: scale(0);}
+    25% {opacity: 1;}
+    100% {width: 25%; transform: scale(1);}
+}
+
+@keyframes shrink {
+    0% {width: 25%; transform: scale(1);}
+    75% {opacity: 0;}
+    100% {width: 0px; transform: scale(0);}
+}
+
+

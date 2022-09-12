@@ -1,0 +1,19 @@
+@use '../utils/' as u;
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+body {
+  margin: 0;
+  font-family: var(--ff-inter);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-regular);
+  color: hsl(var(--clr-black));
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}

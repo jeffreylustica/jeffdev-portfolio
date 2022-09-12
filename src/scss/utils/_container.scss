@@ -1,0 +1,15 @@
+@use  './breakpoints' as b;
+
+@mixin container {
+    width: min(100% - 5%, 1200px);
+    margin: 0 auto;
+
+    @include b.breakpoint-up(md) {
+        width: min(100% - 10%, 1200px);
+    }
+}
+
+@mixin mainPaddingLR {
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
