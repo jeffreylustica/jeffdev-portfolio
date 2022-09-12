@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/jeffdev-portfolio/static/css/main.d94533c0.css",
+    "main.js": "/jeffdev-portfolio/static/js/main.703b4150.js",
+    "index.html": "/jeffdev-portfolio/index.html",
+    "main.d94533c0.css.map": "/jeffdev-portfolio/static/css/main.d94533c0.css.map",
+    "main.703b4150.js.map": "/jeffdev-portfolio/static/js/main.703b4150.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d94533c0.css",
+    "static/js/main.703b4150.js"
+  ]
+}
