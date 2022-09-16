@@ -2,29 +2,49 @@
 
 .hero {
     color: hsl(var(--clr-white));
-    display: grid;
-    grid-template-columns: 1fr;
-    // grid-template-columns: 70% auto;
+    background-color: hsl(var(--clr-primary-dark));
     overflow: hidden;
-    text-align: center;
+    clip-path: polygon(100% 0, 100% 67%, 69% 92%, 0 100%, 0 0);
+    position: relative;
+    z-index: -20;
 
-    &__left {
-        background-color: hsl(var(--clr-primary));
-        padding-top: 6em;
-        padding-bottom: 6em;
-        @include u.mainPaddingLR;
+    .container {
+        @include u.container;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 9em 0 5em;
+
+        .right {
+            display: none;
+        }
+
     }
 
-    &__right {
-        padding-top: 6em;
-        padding-bottom: 6em;
-        @include u.mainPaddingLR;    
+    @include u.breakpoint-up(md) {
+        clip-path: polygon(78% 0, 82% 70%, 69% 92%, 0 100%, 0 0);
+
+        .container {
+            justify-content: space-between;
+            text-align: left;
+        }
+        
+        .right {
+            display: block;    
+        }
     }
 } 
 
 .intro-desc {
-    // max-width: 500px;
+    max-width: 500px;
+    margin: 0 auto;
     margin-bottom: 5em ;
+
+    @include u.breakpoint-up(md) {
+        margin: unset;
+        margin-bottom: 5em ;
+    }
 }
 
 .dl-btn {
@@ -57,11 +77,17 @@
         height: 2.2em;
         width: 2.2em;
         transition: all 400ms ease-in-out;
+
+        @include u.breakpoint-up(md) {
+            height: 2.6em;
+            width: 2.6em;
+            padding: .6em .25em;
+        }
     }
 
     &:hover {
-        width: 12em;
-        color: hsl(var(--clr-black));
+        width: 12.5em;
+        color: hsl(var(--clr-white));
         background-color: hsl(var(--clr-accent));
 
         &::after {

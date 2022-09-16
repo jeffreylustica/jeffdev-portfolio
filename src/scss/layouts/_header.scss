@@ -2,55 +2,33 @@
 
 .header {
     color: hsl(var(--clr-white));
-    display: grid;
-    grid-template-columns: 70% auto;
-    overflow: hidden;
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
 
-    &__left {
-        background-color: hsl(var(--clr-primary));
-        display: flex;        
+    .container {
+        @include u.container;
+        display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-top: 1em;
-        padding-bottom: 1em;
-        @include u.mainPaddingLR;
-    }
-
-    &__right {
-        display: flex;        
-        justify-content: flex-end;
-        align-items: center;
-        padding-top: 1em;
-        padding-bottom: 1em;
-        @include u.mainPaddingLR;
+        padding: 1em 0;
     }
 
     @include u.breakpoint-down(md) {
-        grid-template-columns: 70% auto;
-
-        &__left {
-            grid-column: 1 / -1;
-            grid-row: 1 / 2;
-        }
-
-        &__right {
-            grid-column: 2 / 3;
-            grid-row: 1 / 2;
-        }
-
         .menu-btn {
             display: block;
         }
 
         .log-in-btn {
+            position: fixed;
             background-color: white;
             padding: .75em 5em;
-            position: absolute;
             top: 35em;
-            right: 5em;
+            right: 4.5em;
             opacity: 0;
             transform: translateX(200%);
-            border: none;
+            z-index: 10;
         }
 
         .log-in-btn.active {
@@ -206,7 +184,6 @@
 }
 
 .log-in-btn {
-    position: relative;
     font-family: var(--ff-inter);
     font-size: var(--fs-small);
     font-weight: var(--fw-bold);
@@ -215,31 +192,10 @@
     border-radius: 1.25em;
     border: 2px solid hsl(var(--clr-accent));
     padding: .5em 2em;
-    overflow: hidden;
-    z-index: 10;
     cursor: pointer;
     transition: all 400ms ease-in-out;
 
     &:hover {
-        color: hsl(var(--clr-black));
-    }
-
-    &::before {
-        position: absolute;
-        content: '';
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        transform: scaleX(0);
         background-color: hsl(var(--clr-accent));
-        transform-origin: 100% 100%;
-        transition: all 400ms ease-in-out;
-        z-index: -1;
-    }
-
-    &:hover::before {
-        color: hsl(var(--clr-white));
-        transform: scaleX(1);
     }
 }

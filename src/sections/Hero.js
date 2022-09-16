@@ -4,15 +4,20 @@ export default function Hero() {
 
     return (
         <div className='hero'>
-            <div className="hero__left">
-                <p className="greeting">Hi, I am <strong className="name">Jeffrey Lustica</strong></p>
-                <h1 className="intro">Love Arts and Sports!</h1>
-                <p className='intro-desc'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cumque. Nemo necessitatibus minus consectetur dolorum aperiam ullam voluptate cum error?</p>
+            <div className="container">
+                <div className="left">
+                    <p className="greeting">Hi, I am <strong className="name">Jeffrey Lustica</strong></p>
+                    <h1 className="intro">Love Arts and Sports!</h1>
+                    <p className='intro-desc'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cumque. Nemo necessitatibus minus consectetur dolorum aperiam ullam voluptate cum error?</p>
 
-                <button className="dl-btn">Download CV</button>
+                    <button className="dl-btn">Download CV</button>
+                </div>
+
+                <div className="right">
+                    <h1>Right</h1>
+                </div>
             </div>
 
-            <div className="hero__right">
                 {/* <svg className='hero-design' width="1065" height="919" viewBox="0 0 1065 919" fill="none">
                     <path d="M192.017 442.322C178.679 434.624 178.679 415.373 192.017 407.676L385.003 296.309C398.336 288.615 415 298.238 415 313.632L415 536.366C415 551.76 398.336 561.383 385.003 553.689L192.017 442.322Z" fill="#1C9AC1"/>
                     <path d="M163.76 269.376C156.407 255.811 166.534 239.38 181.957 239.854L675.236 254.993C690.608 255.464 699.718 272.385 691.649 285.477L433.565 704.201C425.495 717.293 406.285 716.759 398.956 703.239L163.76 269.376Z" fill="#1C9AC1" fill-opacity="0.3"/>
@@ -26,7 +31,6 @@ export default function Hero() {
                     <path d="M547.999 580.226L555.575 575.811C557.901 574.456 560.863 574.947 562.627 576.981C564.93 579.637 564.245 583.734 561.203 585.497L553.617 589.894C551.296 591.239 548.347 590.746 546.59 588.719C544.294 586.072 544.971 581.99 547.999 580.226Z" fill="white" stroke="white" stroke-width="5"/>
                     <path d="M270.975 623.73L278.552 619.315C280.878 617.96 283.839 618.451 285.603 620.485C287.907 623.141 287.222 627.238 284.18 629.001L276.593 633.398C274.273 634.743 271.324 634.25 269.566 632.223C267.271 629.576 267.948 625.494 270.975 623.73Z" fill="white" stroke="white" stroke-width="5"/>
                 </svg> */}
-            </div>
         </div>
     )
 }

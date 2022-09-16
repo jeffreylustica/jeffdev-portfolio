@@ -11,9 +11,8 @@ export default function Header() {
 
   return (
     <header className="header">
-        <div className="header__left">
+      <div className="container">
           <h4 className='logo'>&lt;jeffdev /&gt;</h4>
-
 
           <nav className={`nav ${activeClass}`}>
             <ul className="nav-list">
@@ -24,15 +23,12 @@ export default function Header() {
             </ul>
           </nav>
 
-        </div>
-
-        <div className="header__right">
           <div className={`menu-btn ${activeClass}`} onClick={toggleNav}>
             <div className="burger"></div>
           </div>
 
           <button className={`log-in-btn ${activeClass}`}>Log in</button>
-        </div>
+      </div>
     </header>
   )
 }
