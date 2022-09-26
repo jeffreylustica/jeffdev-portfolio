@@ -13,11 +13,9 @@ export default function Skills() {
     })
 
     return (
-        <div className='skills'>
+        <div className='skills' name="skills">
             <div className="container">
-                <h1 className="section-title">Skills</h1>
-
-                <div className="card-holder">
+                <div className="cards-container">
                     {cards}
                 </div>            
             </div>

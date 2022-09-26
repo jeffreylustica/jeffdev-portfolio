@@ -1,0 +1,50 @@
+@use '../utils/' as u;
+
+.timeline {
+
+    .container {
+        @include u.container;
+    }
+
+    .event {
+        display: flex;
+        max-width: 700px;
+        margin: 0 auto;
+        padding-bottom: 5em;
+
+        &__icon {
+            margin-right: 1em;
+        }
+
+        &__line {
+            display: inline-block;
+            height: calc(100% + 1em);
+            border: 1px solid hsla((var(--clr-black)), .3);
+            margin-left: 1.5em;
+        }
+        
+        &__fa-icon {
+            display: inline-block;
+            width: 2em;
+            height: 2em;
+            padding: .5em;
+            border-radius: 50%;
+            border: 1px solid hsla((var(--clr-black)), .5);
+        }
+
+        &__info {
+            padding: 2em;
+            border: 1px solid hsla((var(--clr-black)), 0.2);
+            // box-shadow: 0px 10px 20px -8px hsl((var(--clr-black)));
+            transition: all 300ms ease-in-out;
+
+            &:hover {
+                transform: scale(1.03);
+                color: hsl((var(--clr-white)));
+                background-color: hsl((var(--clr-primary-dark)));
+                box-shadow: 0px 10px 20px -8px hsl((var(--clr-black)));
+            }
+        }
+    }
+
+}

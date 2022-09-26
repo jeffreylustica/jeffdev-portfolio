@@ -1,11 +1,20 @@
 @use '../utils/' as u;
 
 .header {
-    color: hsl(var(--clr-white));
+    color: hsl(var(--clr-black));
     background-color: transparent;
+    box-shadow: 0px 5px 10px -8px hsla(var(--clr-black), .5);
     position: fixed;
     width: 100%;
     z-index: 10;
+
+    &.scrolledClass {
+        background-color: hsla(var(--clr-white), .95);
+
+        .container {
+            padding: .5em 0;
+        }
+    }
 
     .container {
         @include u.container;
@@ -13,6 +22,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 1em 0;
+        transition: all 400ms ease-in-out;
     }
 
     @include u.breakpoint-down(md) {
@@ -20,21 +30,21 @@
             display: block;
         }
 
-        .log-in-btn {
-            position: fixed;
-            background-color: white;
-            padding: .75em 5em;
-            top: 35em;
-            right: 4.5em;
-            opacity: 0;
-            transform: translateX(200%);
-            z-index: 10;
-        }
+        // .log-in-btn {
+        //     font-size: var(--fs-small);
+        //     position: fixed;
+        //     padding: .75em 4em;
+        //     top: 35em;
+        //     right: 5.5em;
+        //     opacity: 0;
+        //     transform: translateX(200%);
+        //     z-index: 10;
+        // }
 
-        .log-in-btn.active {
-            opacity: 1;
-            transform: translateX(0);
-        }
+        // .log-in-btn.active {
+        //     opacity: 1;
+        //     transform: translateX(0);
+        // }
 
         .nav {
             position: fixed;
@@ -42,7 +52,8 @@
             right: 0;
             height: auto;
             width: 320px;
-            background-color: #1C9AC1;
+            // color: hsla(var(--clr-black), .1);
+            background-color: hsl(var(--clr-white));
             transform: translateX(100%);
             transition: all 400ms ease-in-out;
             z-index: 5;
@@ -51,19 +62,19 @@
                 transform: translateX(0);
 
                 .nav-list__item {
-                    animation: showItemsUp 500ms both;
+                    animation: showItemsUp 400ms linear both 0.5s;
                 }
     
-                @for $i from 1 through 4 {
-                    .nav-list__item:nth-child(#{$i}) {
-                        animation-delay: ($i * 0.1s) + 0.15s;
-                    }
-                }
+                // @for $i from 1 through 4 {
+                //     .nav-list__item:nth-child(#{$i}) {
+                //         animation-delay: ($i * 0.1s) + 0.15s;
+                //     }
+                // }
             }
         }
 
         .nav-list {
-            padding-top: 8em;
+            margin-top: 5em;
             flex-direction: column;
             height: 100vh;
 
@@ -74,7 +85,7 @@
                 .link {
                     display: inline-block;
                     text-align: center;
-                    width: 7em;
+                    width: 6em;
                 }
             }
         }      
@@ -89,7 +100,7 @@
     display: none;
     position: relative;
     height: 26px;
-    width: 26px;
+    width: 6px;
     cursor: pointer;
     transition: all 400ms ease-in-out;
     z-index: 10;
@@ -100,7 +111,7 @@
         height: 4px;
         top: 10px;
         border-radius: 1em;
-        background-color: hsl(var(--clr-white));
+        background-color: hsla(var(--clr-black), .9);
         transition: all 400ms ease-in-out;
 
         &::before {
@@ -110,7 +121,7 @@
             height: 4px;
             top: -8px;
             border-radius: 1em;
-            background-color: hsl(var(--clr-white));
+            background-color: hsla(var(--clr-black), .9);
             transition: all 400ms ease-in-out;
         }
 
@@ -122,13 +133,15 @@
             left: 0;
             top: 8px;
             border-radius: 1em;
-            background-color: hsl(var(--clr-white));
+            background-color: hsla(var(--clr-black), .9);
             transition: all 400ms ease-in-out;
         }
     }
 
     &.active {
-         transform: rotate(720deg);
+         width: 26px;
+        //  transform: rotate(720deg) translateX(9px);
+         transform: translateX(9px);
 
          .burger {
             background-color: transparent;
@@ -156,46 +169,57 @@
 
         .link {
             position: relative;
-            color: hsl(var(--clr-white));
-            padding: .5em .1em;
+            color: hsla(var(--clr-black), .9);
+            padding: .25em 0;
+            transition: all 400ms ease-in-out;
+            cursor: pointer;
 
             &::before {
                 position: absolute;
                 content: '';
                 right: 0;
                 bottom: 0;
-                height: 2px;
+                height: .17em;
                 width: 100%;
                 transform: scaleX(0);
-                background-color: hsl(var(--clr-accent));
-                transform-origin: 100% 100%;
+                background-color: hsl(var(--clr-primary));
+                // transform-origin: 0% 100%;
                 transition: all 400ms ease-in-out;
+                z-index: -1;
             }
 
-            &:hover::before {
-                transform: scaleX(1);
+            &:hover {
+                color: hsl(var(--clr-black));
+                
+                &::before {
+                    transform: scaleX(1);
+                }
             }
-
-            &.active::before {
-                transform: scaleX(1);
+            
+            &.active {
+                color: hsl(var(--clr-primary-dark));
+                
+                &::before {
+                    transform: scaleX(1);
+                }
             }
         }     
     }
 }
 
-.log-in-btn {
-    font-family: var(--ff-inter);
-    font-size: var(--fs-small);
-    font-weight: var(--fw-bold);
-    color: hsl(var(--clr-black));
-    background-color: transparent;
-    border-radius: 1.25em;
-    border: 2px solid hsl(var(--clr-accent));
-    padding: .5em 2em;
-    cursor: pointer;
-    transition: all 400ms ease-in-out;
+// .log-in-btn {
+//     font-family: var(--ff-inter);
+//     font-size: var(--fs-small);
+//     font-weight: var(--fw-bold);
+//     color: hsl(var(--clr-black));
+//     background-color: transparent;
+//     border: 1px solid hsl(var(--clr-primary));
+//     padding: .5em 2em;
+//     cursor: pointer;
+//     transition: all 400ms ease-in-out;
 
-    &:hover {
-        background-color: hsl(var(--clr-accent));
-    }
-}
+//     &:hover {
+//         color: hsl(var(--clr-white));
+//         background-color: hsl(var(--clr-primary));
+//     }
+// }

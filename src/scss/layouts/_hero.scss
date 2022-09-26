@@ -1,20 +1,24 @@
 @use '../utils/' as u;
 
 .hero {
-    color: hsl(var(--clr-white));
-    background-color: hsl(var(--clr-primary-dark));
+    color: hsl(var(--clr-black));
     overflow: hidden;
-    clip-path: polygon(100% 0, 100% 67%, 69% 92%, 0 100%, 0 0);
     position: relative;
-    z-index: -20;
+    padding: 10em 0 7em;
+    background-color: hsla(var(--clr-white), .4);
+    background-image: url(../images/hero-bg.jpg);
+    background-size: cover;
+    background-position: left top;
+    background-blend-mode: lighten;
+    clip-path: polygon(0 0, 109% 0, 100% 87%, 38% 100%, 0 95%);
+    margin-bottom: 5em;
 
     .container {
         @include u.container;
         display: flex;
         justify-content: center;
         align-items: center;
-        text-align: center;
-        padding: 9em 0 5em;
+        text-align: center;        
 
         .right {
             display: none;
@@ -23,8 +27,6 @@
     }
 
     @include u.breakpoint-up(md) {
-        clip-path: polygon(78% 0, 82% 70%, 69% 92%, 0 100%, 0 0);
-
         .container {
             justify-content: space-between;
             text-align: left;
@@ -37,7 +39,7 @@
 } 
 
 .intro-desc {
-    max-width: 500px;
+    max-width: 450px;
     margin: 0 auto;
     margin-bottom: 5em ;
 
@@ -47,53 +49,47 @@
     }
 }
 
-.dl-btn {
-    font-size: var(--fs-small);
+.hero__btn {
+    font-family: var(--ff-inter);
+    font-size: var(--fs-body);
     font-weight: var(--fw-bold);
-    color: transparent;
-    text-transform: uppercase;
-    padding: .75em 1em;
-    padding-right: 2.5em;
-    background-color: hsl(var(--clr-white));
-    border-radius: 1.5em;
-    border: 2px solid hsl(var(--clr-accent));
-    position: relative;
+    padding: .625em 1.5em;
     cursor: pointer;
-    overflow: hidden;
-    white-space: nowrap; 
     transition: all 400ms ease-in-out;
-    width: 6em;
+    display: block;
+    width: 80%;
+    margin: 0 auto;
 
-    &::after {
-        content: '⬇';
-        font-size: var(--fs-body);
-        position: absolute;
-        top: 0;
-        right: 0;
-        color: hsl(var(--clr-black));
-        background-color: hsl(var(--clr-accent));
-        border-radius: 50%;
-        padding: .325em .25em;
-        height: 2.2em;
-        width: 2.2em;
-        transition: all 400ms ease-in-out;
+    @include u.breakpoint-up(sm) {
+        width: unset;
+        display: inline-block;
+    }
+}
 
-        @include u.breakpoint-up(md) {
-            height: 2.6em;
-            width: 2.6em;
-            padding: .6em .25em;
-        }
+.learn-more-btn {
+    background-color: hsl(var(--clr-primary));
+    border: 1px solid hsl(var(--clr-primary));
+    color: hsl(var(--clr-white));
+    margin-bottom: 1em;
+
+    @include u.breakpoint-up(sm) {
+        margin-right: 1em;
     }
 
     &:hover {
-        width: 12.5em;
-        color: hsl(var(--clr-white));
-        background-color: hsl(var(--clr-accent));
+        color: hsl(var(--clr-black));
+        background-color: hsl(var(--clr-white));
+        border: 1px solid hsl(var(--clr-white));
+    }
+}
 
-        &::after {
-            transform: rotate(720deg);
-            background-color: hsl(var(--clr-white));
-        }
+.cv-btn {
+    background-color: transparent;
+    border: 1px solid hsl(var(--clr-primary));
+
+    &:hover {
+        color: hsl(var(--clr-white));
+        background-color: hsl(var(--clr-primary));
     }
 }
 

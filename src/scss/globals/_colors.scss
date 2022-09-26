@@ -1,10 +1,22 @@
-:root {  
-    --clr-primary: 194, 85%, 62%;
-    --clr-primary-dark: 194, 65%, 29%;
-    --clr-secondary: 333, 93%, 56%;
-    --clr-secondary-dark: 332, 84%, 29%;
-    --clr-accent: 72, 66%, 51%;
+// :root {  
+//     --clr-primary: 189, 73%, 32%;
+//     --clr-primary-dark: 193, 31%, 20%;
+//     --clr-secondary: 0, 0%, 95%;
+//     --clr-secondary-dark: 332, 84%, 29%;
+//     --clr-accent: 151, 82%, 55%;
+//     --clr-black: 0, 0%, 0%;
+//     --clr-white: 0, 0%, 100%;
+// }
+
+:root {
+    --clr-primary: 196, 86%, 58%;
+    --clr-accent: 66, 68%, 52%;
     --clr-black: 0, 0%, 0%;
     --clr-white: 0, 0%, 100%;
+}
+
+.temp2 {
+    --clr-primary: #38BFF0;
+    --clr-accent: #C6D830;
 }
 
