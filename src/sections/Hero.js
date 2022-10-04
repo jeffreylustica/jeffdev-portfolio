@@ -10,8 +10,8 @@ function Hero(props, ref) {
                     <h1 className="intro">Love Arts and Sports!</h1>
                     <p className='intro-desc'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cumque. Nemo necessitatibus minus consectetur dolorum aperiam ullam voluptate cum error?</p>
 
-                    <button className="hero__btn learn-more-btn">Learn more</button>
                     <button className="hero__btn cv-btn">Download CV</button>
+                    <button className="hero__btn learn-more-btn">Learn more</button>
                 </div>
 
                 {/* <div className="right">

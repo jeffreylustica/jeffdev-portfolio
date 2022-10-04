@@ -1,0 +1,17 @@
+@use '../utils/' as u;
+
+.footer {
+    background-color: hsl(var(--clr-primary));
+    clip-path: polygon(0 10%, 41% 0, 100% 26%, 100% 100%, 0 100%);
+    
+    .container {
+        @include u.container;
+        text-align: center;
+        padding: 4em 0 3em;
+    }
+
+    &__copyright {
+        font-weight: var(--fw-regular);
+        margin-bottom: 0;
+    }
+}

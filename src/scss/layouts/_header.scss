@@ -62,25 +62,26 @@
                 transform: translateX(0);
 
                 .nav-list__item {
-                    animation: showItemsUp 400ms linear both 0.5s;
+                    animation: showItemsUp 400ms ease-in-out both 0.5s;
                 }
     
-                // @for $i from 1 through 4 {
-                //     .nav-list__item:nth-child(#{$i}) {
-                //         animation-delay: ($i * 0.1s) + 0.15s;
-                //     }
-                // }
+                @for $i from 1 through 5 {
+                    .nav-list__item:nth-child(#{$i}) {
+                        animation-delay: ($i * 0.05s) + 0.15s;
+                    }
+                }
             }
         }
 
         .nav-list {
-            margin-top: 5em;
+            // margin-top: 5em;
             flex-direction: column;
+            justify-content: center;
             height: 100vh;
 
             &__item {
                 margin-left: unset;
-                margin-bottom: 3em;
+                margin-bottom: 4em;
 
                 .link {
                     display: inline-block;
@@ -100,7 +101,7 @@
     display: none;
     position: relative;
     height: 26px;
-    width: 6px;
+    width: 26px;
     cursor: pointer;
     transition: all 400ms ease-in-out;
     z-index: 10;
@@ -141,7 +142,7 @@
     &.active {
          width: 26px;
         //  transform: rotate(720deg) translateX(9px);
-         transform: translateX(9px);
+        //  transform: translateX(9px);
 
          .burger {
             background-color: transparent;

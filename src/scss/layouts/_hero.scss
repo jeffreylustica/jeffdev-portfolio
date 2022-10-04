@@ -11,7 +11,7 @@
     background-position: left top;
     background-blend-mode: lighten;
     clip-path: polygon(0 0, 109% 0, 100% 87%, 38% 100%, 0 95%);
-    margin-bottom: 5em;
+    margin-bottom: 10em;
 
     .container {
         @include u.container;
@@ -66,7 +66,7 @@
     }
 }
 
-.learn-more-btn {
+.cv-btn {
     background-color: hsl(var(--clr-primary));
     border: 1px solid hsl(var(--clr-primary));
     color: hsl(var(--clr-white));
@@ -78,13 +78,13 @@
 
     &:hover {
         color: hsl(var(--clr-black));
-        background-color: hsl(var(--clr-white));
+        background-color: hsla(var(--clr-white), .5);
         border: 1px solid hsl(var(--clr-white));
     }
 }
 
-.cv-btn {
-    background-color: transparent;
+.learn-more-btn {
+    background-color: hsla(var(--clr-white), .5);
     border: 1px solid hsl(var(--clr-primary));
 
     &:hover {

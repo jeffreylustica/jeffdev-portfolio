@@ -7,6 +7,7 @@ import Projects from './sections/Projects'
 import Timeline from './sections/Timeline'
 import Contact from './sections/Contact'
 import useObserver from './hooks/useObserver'
+import Footer from './sections/Footer'
 
 export default function App() {
     const [ref, isElVisible] = useObserver({rootMargin: "-480px 0px 0px 0px"}, {once: false})
@@ -20,6 +21,7 @@ export default function App() {
         <Projects />
         <Timeline />
         <Contact />
+        <Footer />
       </>
     )
 }

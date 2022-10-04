@@ -2,7 +2,7 @@
 @use '../utils/' as u;
 
 .skills {
-    padding: 6em 0;
+    padding: 4em 0 10em;
     
     .container {
         @include u.container;
@@ -12,7 +12,7 @@
             content: 'Skills';
             position: absolute;
             top: -1.1em;
-            left: -.3em;
+            left: 0;
             width: 100%;
             font-size: 5em;
             color: hsla(var(--clr-black), .1);
@@ -42,24 +42,41 @@
 }
 
 .card {
-    background-color: hsla(var(--clr-primary-dark), 0);
     padding: 2em 1em;
     // width: 165px;
     width: 100%;
     border: 1px solid hsla(var(--clr-black), .2);
     border-radius: .5em;
     color: hsl(var(--clr-black));
-    justify-self: center;
+    // justify-self: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     // box-shadow: -8px 8px 10px -8px rgba(0,0,0,0.75);
-    transition: all 200ms ease-in-out;
+    transition: all 400ms ease-in-out;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: hsl(var(--clr-primary));
+        clip-path: circle(10% at 0% 0%);
+        transition: all 400ms ease-in-out;
+        z-index: -1;
+    }
 
     &:hover {
-        background: linear-gradient(to right, hsl(var(--clr-primary)) 0%, hsl(var(--clr-primary)) 50%, hsla(var(--clr-primary), .50) 50%, hsla(var(--clr-primary), .50 ) 100%);
-        transform: scale(1.02);
+        // background: linear-gradient(to right, hsl(var(--clr-primary)) 0%, hsl(var(--clr-primary)) 50%, hsla(var(--clr-primary), .50) 50%, hsla(var(--clr-primary), .50 ) 100%);
+        // background-color: hsla(var(--clr-primary), 1);
+        // transform: scale(1.02);
         box-shadow: -10px 10px 20px -8px rgba(0,0,0,0.75);
+        &::before {
+            clip-path: circle(70%);
+        }
     }
 }
 

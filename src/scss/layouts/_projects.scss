@@ -1,10 +1,9 @@
 @use '../utils/' as u;
 
 .projects {
-    padding: 8em 0;
+    padding: 6em 0 10em;
     position: relative;
-    overflow: hidden;
-    border: 1px solid peachpuff;
+    // overflow: hidden;
 
     // &::before, &::after {
     //     content: '';
@@ -24,12 +23,15 @@
     .container {
         @include u.container;
         position: relative;
+        padding: 2em 0;
+    }
 
-        &::before {
+    .project-container-1 {
+        &:nth-child(1)::before {
             content: 'Projects';
             position: absolute;
             top: -1.3em;
-            left: -.3em;
+            left: 0;
             width: 100%;
             font-size: 5em;
             color: hsla(var(--clr-black), .1);
@@ -51,18 +53,22 @@
         //     background-color: hsla(var(--clr-primary), .5);
         //     clip-path: polygon(0 12%, 100% 20%, 100% 48%, 0 40%);
         // }
-        
-        .project-item {
+        // .container {
+        //     @include u.container;
+        // }
+
+        .container{
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-areas: 
                 "left right";
             gap: 1em 2em;
-            padding-bottom: 1em;
         }
 
         .left {
             grid-area: left;
+            // width: 120%;
+            // transform: translateX(-20%);
         }
 
         .right {
@@ -70,11 +76,25 @@
         }
     }
 
-    .project__link {
-        display: block;
+    .project-item {
+        // margin-bottom: 7em;
+
+        &:nth-child(1) {
+            background-color: hsl(var(--clr-accent));
+        }
+
+        &:nth-child(2) {
+            background-color: #2F2F2F;
+        }
+
+        &:nth-child(3) {
+            background-color: hsla(var(--clr-primary), .75);
+        }
+    }
+
+    .project__image-placeholder {
         overflow: hidden;
-        background: hsl(var(--clr-accent));
-        // box-shadow: -4px 6px 17px 0px rgba(0,0,0,0.75);
+        background: hsl(var(--clr-white));
         
         &:hover .project__image {
             transform: scale(1.2);
@@ -83,15 +103,28 @@
     }
 
     .project__image {
+        width: 100%;
+        min-height: 400px;
+        // max-height: 400px;
+        object-fit: cover;
+        object-position: right;
         transition: all 400ms ease-in-out;
     }
 
     .project__info {
-         @include u.container;
-         padding: 1em 0;
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
+        // margin-left: 5vw;
+        // margin-right: 5vw;
+        padding: 1em 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        @include u.breakpoint-up(md) {
+            // margin-left: unset;
+            // margin-right: unset;
+            margin-left: 1em;
+        }
     }
 
     .secondary-title {
@@ -101,9 +134,24 @@
 
     .desc {
         font-size: var(--fs-body);
+        margin-bottom: 3em;
     }
 
-    // .text-light {
-    //     color: hsl(var(--clr-white));
-    // }
+    .project__link {
+        color: hsl(var(--clr-white));
+        background-color: hsl(var(--clr-primary));
+        padding: .5em 1.125em;
+        transition: all 400ms ease-in-out;
+
+        &:hover {
+            background-color: hsl(var(--clr-white));
+            color: hsl(var(--clr-primary));
+            box-shadow: -6px 6px 10px -2px hsla(var(--clr-black), .5);
+            // scale: 1.03;
+        }
+    }
+
+    .text-light {
+        color: hsl(var(--clr-white));
+    }
 }

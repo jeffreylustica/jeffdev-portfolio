@@ -13,7 +13,9 @@ export default function Featured() {
                 </div>
 
                 <div className="right">
-                    <img className='featured__photo' src={featuredImg} alt='my featured project'></img>
+                    <div className='photo-placeholder'>
+                        <img className='featured__photo' src={featuredImg} alt='my featured project'></img>
+                    </div>
                 </div>
             </div>
         </div>

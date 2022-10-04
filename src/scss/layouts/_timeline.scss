@@ -1,9 +1,25 @@
 @use '../utils/' as u;
 
 .timeline {
+    padding: 5em 0 10em;
 
     .container {
         @include u.container;
+        position: relative;
+
+        &::before {
+            content: 'Timeline';
+            position: absolute;
+            top: -1.3em;
+            left: 0;
+            width: 100%;
+            font-size: 5em;
+            color: hsla(var(--clr-black), .1);
+
+            @include u.breakpoint-up(md) {
+                font-size: 6em;
+            }
+        }
     }
 
     .event {
@@ -19,31 +35,47 @@
         &__line {
             display: inline-block;
             height: calc(100% + 1em);
-            border: 1px solid hsla((var(--clr-black)), .3);
-            margin-left: 1.5em;
+            margin-left: 1.75em;
+            // border: 1px solid hsla((var(--clr-primary)), .3);
+            // background-color: hsla((var(--clr-primary)), .3);
+            border: 1px solid hsla((var(--clr-primary)), .75);
+            background-color: hsla((var(--clr-primary)), .75);
         }
         
         &__fa-icon {
             display: inline-block;
             width: 2em;
             height: 2em;
-            padding: .5em;
+            padding: .75em;
             border-radius: 50%;
-            border: 1px solid hsla((var(--clr-black)), .5);
+            border: 1px solid hsl((var(--clr-white)));
+            color: hsl((var(--clr-primary)));
+            background-color: hsla((var(--clr-black)), .75);
+            box-shadow: 0px 10px 20px -8px hsl((var(--clr-black)));
         }
 
         &__info {
             padding: 2em;
-            border: 1px solid hsla((var(--clr-black)), 0.2);
+            border: 1px solid hsla((var(--clr-primary)), 1);
             // box-shadow: 0px 10px 20px -8px hsl((var(--clr-black)));
             transition: all 300ms ease-in-out;
+            color: hsl((var(--clr-black)));
+            // background-color: hsla((var(--clr-black)), .75);
 
             &:hover {
-                transform: scale(1.03);
-                color: hsl((var(--clr-white)));
-                background-color: hsl((var(--clr-primary-dark)));
+                // transform: scale(1.01);
+                // background-color: hsl((var(--clr-accent)));
                 box-shadow: 0px 10px 20px -8px hsl((var(--clr-black)));
             }
+        }
+
+        &__date {
+            // color: hsla((var(--clr-black)), 1);
+            font-weight: var(--fw-bold);
+        }
+
+        &__company {
+            color: hsl((var(--clr-primary)));
         }
     }
 
