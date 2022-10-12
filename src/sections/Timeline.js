@@ -14,7 +14,7 @@ export default function Timeline() {
                     </div>
                     <div className="event__info">
                         <small className="event__date">June 2 2012 - October 2 2016</small>
-                        <h2 className="event__company">AMA Computer Learning Center</h2>
+                        <h2 className="event__company">AMA Computer Learning Center College Of Baliuag</h2>
                         <p className="event__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cumque. Nemo necessitatibus minus consectetur dolorum aperiam ullam voluptate cum error? Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cumque. Nemo necessitatibus minus consectetur dolorum aperiam ullam voluptate cum error? </p>
                     </div>
                 </div>

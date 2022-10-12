@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import { Link } from 'react-scroll'
+import logo from '../images/logo24.svg'
 
 export default function Header({isElVisible}) {
   const [isNavActive, setIsNavActive] = useState(false)
@@ -18,7 +19,9 @@ export default function Header({isElVisible}) {
   return (
     <header className={`header ${scrolledNavClass}`}>
       <div className="container">
-          <h2 className='logo'>&lt;jeffdev /&gt;</h2>
+          <a href="#" className="logo-link">
+            <img className='logo' src={logo} alt="website logo"/>
+          </a>
 
           <nav className={`nav ${activeNav}`}>
             <ul className="nav-list">

@@ -1,4 +1,6 @@
 import React from 'react'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faArrowUpRightFromSquare} from '@fortawesome/free-solid-svg-icons'
 
 export default function ProjectItem({data, idx}) {
     const {imgAreaClass, source, infoAreaClass, infoTextClass, secondaryTitle, mainTitle, desc, link} = data
@@ -17,7 +19,7 @@ export default function ProjectItem({data, idx}) {
                     <p className="desc">
                        {desc}
                     </p>
-                    <a href={`${link}`} target="_blank" className="project__link">View Project</a>
+                    <a href={`${link}`} target={`_blank`} className="project__link">View Project <FontAwesomeIcon icon={faArrowUpRightFromSquare}/></a>
                 </div>
             </div>
         </div>
