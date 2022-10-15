@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/jeffdev-portfolio/static/css/main.050bc7bf.css",
-    "main.js": "/jeffdev-portfolio/static/js/main.62517111.js",
+    "main.css": "/jeffdev-portfolio/static/css/main.92e544f1.css",
+    "main.js": "/jeffdev-portfolio/static/js/main.73f47290.js",
     "static/media/hero-bg2.jpg": "/jeffdev-portfolio/static/media/hero-bg2.9a0f3a75b805b6378138.jpg",
     "static/media/movie-watchlist-dark2.png": "/jeffdev-portfolio/static/media/movie-watchlist-dark2.a026fa3df3a0440d8fe6.png",
     "static/media/color-scheme-generator.png": "/jeffdev-portfolio/static/media/color-scheme-generator.c2a5adc25fa844e91648.png",
@@ -10,14 +10,14 @@
     "static/media/logo24.svg": "/jeffdev-portfolio/static/media/logo24.5558763a87e1a4198e84f58ec72c225e.svg",
     "index.html": "/jeffdev-portfolio/index.html",
     "static/media/arrow-down.svg": "/jeffdev-portfolio/static/media/arrow-down.2649d646c67e98011b13.svg",
-    "static/media/arrow.svg": "/jeffdev-portfolio/static/media/arrow.65459bdf3002c83f2bad9eb1a535017f.svg",
+    "static/media/arrow.svg": "/jeffdev-portfolio/static/media/arrow.2a85537f2a6b2c427a17de5d3d7e4548.svg",
     "static/media/square-bg.svg": "/jeffdev-portfolio/static/media/square-bg.722ca963f912645c4862.svg",
     "static/media/square-small-bg.svg": "/jeffdev-portfolio/static/media/square-small-bg.1fcaa4160d87a386d264.svg",
-    "main.050bc7bf.css.map": "/jeffdev-portfolio/static/css/main.050bc7bf.css.map",
-    "main.62517111.js.map": "/jeffdev-portfolio/static/js/main.62517111.js.map"
+    "main.92e544f1.css.map": "/jeffdev-portfolio/static/css/main.92e544f1.css.map",
+    "main.73f47290.js.map": "/jeffdev-portfolio/static/js/main.73f47290.js.map"
   },
   "entrypoints": [
-    "static/css/main.050bc7bf.css",
-    "static/js/main.62517111.js"
+    "static/css/main.92e544f1.css",
+    "static/js/main.73f47290.js"
   ]
 }
