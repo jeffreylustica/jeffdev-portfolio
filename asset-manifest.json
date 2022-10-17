@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/jeffdev-portfolio/static/css/main.a77040c5.css",
-    "main.js": "/jeffdev-portfolio/static/js/main.7e231d7b.js",
+    "main.css": "/jeffdev-portfolio/static/css/main.2e11941a.css",
+    "main.js": "/jeffdev-portfolio/static/js/main.26697cd2.js",
     "static/media/hero-bg2.jpg": "/jeffdev-portfolio/static/media/hero-bg2.9a0f3a75b805b6378138.jpg",
     "static/media/movie-watchlist-dark2.png": "/jeffdev-portfolio/static/media/movie-watchlist-dark2.a026fa3df3a0440d8fe6.png",
-    "static/media/jeffrey.f.lustica-resume.pdf": "/jeffdev-portfolio/static/media/jeffrey.f.lustica-resume.fcb4bc46fbb6b3750ac5.pdf",
     "static/media/color-scheme-generator.png": "/jeffdev-portfolio/static/media/color-scheme-generator.c2a5adc25fa844e91648.png",
+    "static/media/jeffrey.f.lustica-resume.pdf": "/jeffdev-portfolio/static/media/jeffrey.f.lustica-resume.559b987f94a2d0fe1624.pdf",
     "static/media/password-generator.png": "/jeffdev-portfolio/static/media/password-generator.d6e9d8ea05c44ce65ecf.png",
     "static/media/quizzical-app.png": "/jeffdev-portfolio/static/media/quizzical-app.5ff474bacbc37640ff7f.png",
     "static/media/logo24.svg": "/jeffdev-portfolio/static/media/logo24.5558763a87e1a4198e84f58ec72c225e.svg",
@@ -14,11 +14,11 @@
     "static/media/arrow.svg": "/jeffdev-portfolio/static/media/arrow.2a85537f2a6b2c427a17de5d3d7e4548.svg",
     "static/media/square-bg.svg": "/jeffdev-portfolio/static/media/square-bg.722ca963f912645c4862.svg",
     "static/media/square-small-bg.svg": "/jeffdev-portfolio/static/media/square-small-bg.1fcaa4160d87a386d264.svg",
-    "main.a77040c5.css.map": "/jeffdev-portfolio/static/css/main.a77040c5.css.map",
-    "main.7e231d7b.js.map": "/jeffdev-portfolio/static/js/main.7e231d7b.js.map"
+    "main.2e11941a.css.map": "/jeffdev-portfolio/static/css/main.2e11941a.css.map",
+    "main.26697cd2.js.map": "/jeffdev-portfolio/static/js/main.26697cd2.js.map"
   },
   "entrypoints": [
-    "static/css/main.a77040c5.css",
-    "static/js/main.7e231d7b.js"
+    "static/css/main.2e11941a.css",
+    "static/js/main.26697cd2.js"
   ]
 }
