@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/jeffdev-portfolio/static/css/main.4c946ad6.css",
-    "main.js": "/jeffdev-portfolio/static/js/main.3e79c5c0.js",
+    "main.css": "/jeffdev-portfolio/static/css/main.4d4ca3f5.css",
+    "main.js": "/jeffdev-portfolio/static/js/main.330f61c3.js",
     "static/media/hero-bg2.jpg": "/jeffdev-portfolio/static/media/hero-bg2.9a0f3a75b805b6378138.jpg",
     "static/media/movie-watchlist-dark2.png": "/jeffdev-portfolio/static/media/movie-watchlist-dark2.a026fa3df3a0440d8fe6.png",
     "static/media/color-scheme-generator.png": "/jeffdev-portfolio/static/media/color-scheme-generator.c2a5adc25fa844e91648.png",
@@ -14,11 +14,11 @@
     "static/media/arrow.svg": "/jeffdev-portfolio/static/media/arrow.2a85537f2a6b2c427a17de5d3d7e4548.svg",
     "static/media/square-bg.svg": "/jeffdev-portfolio/static/media/square-bg.722ca963f912645c4862.svg",
     "static/media/square-small-bg.svg": "/jeffdev-portfolio/static/media/square-small-bg.1fcaa4160d87a386d264.svg",
-    "main.4c946ad6.css.map": "/jeffdev-portfolio/static/css/main.4c946ad6.css.map",
-    "main.3e79c5c0.js.map": "/jeffdev-portfolio/static/js/main.3e79c5c0.js.map"
+    "main.4d4ca3f5.css.map": "/jeffdev-portfolio/static/css/main.4d4ca3f5.css.map",
+    "main.330f61c3.js.map": "/jeffdev-portfolio/static/js/main.330f61c3.js.map"
   },
   "entrypoints": [
-    "static/css/main.4c946ad6.css",
-    "static/js/main.3e79c5c0.js"
+    "static/css/main.4d4ca3f5.css",
+    "static/js/main.330f61c3.js"
   ]
 }
