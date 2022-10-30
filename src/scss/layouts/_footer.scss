@@ -11,6 +11,8 @@
     }
 
     &__copyright {
+        font-size: 1.125em;
+        color: hsla(var(--clr-white), .95);
         font-weight: var(--fw-regular);
         margin-bottom: 0;
     }

@@ -1,16 +1,18 @@
 import React from 'react'
+import resume from '../files/jeffrey.f.lustica-resume.pdf'
+import arrow from '../images/arrow.svg'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faFacebookF, faLinkedinIn, faGithub, enve} from '@fortawesome/free-brands-svg-icons'
-import {faEnvelope, faDownload, faArrowDown} from '@fortawesome/free-solid-svg-icons'
+import {faEnvelope, faDownload, faFileArrowDown,faArrowDown} from '@fortawesome/free-solid-svg-icons'
 
 function Hero(props, ref) {
 
     return (
-        <div className='hero' ref={ref}>
+        <div className='hero' name="hero" ref={ref}>
             <div className="container">
                 <div className="left">
-                    <p className="greeting">Hi, I am <strong className="name">Jeffrey Lustica</strong></p>
-                    <h1 className="intro">Love Arts and Sports!</h1>
+                    {/* <p className="greeting">Hi, I am <strong className="name">Jeffrey Lustica</strong></p> */}
+                    <h1 className="intro">Overcome obstacles, let's make it together.</h1>
                     <p className='intro-desc'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cumque. Nemo necessitatibus minus consectetur dolorum aperiam ullam voluptate cum error?</p>
 
                     {/* <div className="hero__icons">
@@ -28,14 +30,13 @@ function Hero(props, ref) {
                         </a>
                     </div> */}
 
-                    <button className="hero__btn cv-btn">Download CV 
-                    </button> 
-                    {/* <FontAwesomeIcon icon={faDownload} /> */}
+                    <a href={resume} download="jeffreyLustica-resume" className="hero__btn cv-btn">Download CV   <FontAwesomeIcon icon={faFileArrowDown} className="hero__btn-icon" /> </a> 
+                 
                     {/* <span className='hero__arrow-container'>
                         <FontAwesomeIcon className='hero__arrow-down' icon={faArrowDown} />
                     </span> */}
                     {/* <button className="hero__btn learn-more-btn">More about me</button> */}
-                    <span className="hero__explore">Learn more</span>
+                    <span className="hero__explore">More about me</span>
 
                     {/* <div className='hero__scroll'></div> */}
                 </div>

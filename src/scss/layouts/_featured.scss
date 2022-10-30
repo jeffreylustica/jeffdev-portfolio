@@ -2,7 +2,7 @@
 
 .featured {  
     overflow: hidden;
-    padding: 4em 0 10em;
+    padding: 4.5em 0 10em;
     
     .container {
         // @include u.container;
@@ -17,10 +17,9 @@
         &::before {
             content: 'Featured';
             position: absolute;
-            top: -1.1em;
-            left: 0;
-            width: 100%;
-            font-size: 5em;
+            top: -1.4em;
+            left: 6vw;
+            font-size: 4em;
             color: hsla(var(--clr-black), .1);
         }
 
@@ -28,8 +27,8 @@
             grid-area: featured-left;
             background-color: hsla(var(--clr-white), .5);
             backdrop-filter: blur(5px);
-            margin-left: 5vw;
-            margin-right: 5vw;
+            margin-left: 6vw;
+            margin-right: 6vw;
             position: relative;
             border-radius: .25em;
             display: flex;
@@ -47,15 +46,37 @@
             "featured-left featured-right";
 
             &::before {
-                top: -1em;
-                font-size: 6em;
+                top: -1.4em;
+                left: 4em;
+            }
+
+            .square-bg {
+                position: absolute;
+                width: 140px;
+                height: 140px;
+                top: -10%;
+                left: -2%;
+    
+                &::before {
+                    content: url(../images/square-bg.svg);
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+    
+                &::after {
+                    content: url(../images/square-small-bg.svg);
+                    position: absolute;
+                    top: -25%;
+                    right: -25%;
+                }
             }
     
             .left {
                 padding: 1.25em;
                 align-self: center;
                 width: 110%;
-                min-width: 400px;
+                // min-width: 400px;
                 position: relative;
                 z-index: 5;
                 box-shadow: -6px 10px 10px -8px hsla(var(--clr-black), .5);
@@ -90,16 +111,16 @@
     &__link {
         font-weight: var(--fw-medium);
         color: hsl(var(--clr-white));
-        background-color: hsl(var(--clr-primary-dark));
-        padding: .5em 1.125em;
+        background-color: hsl(var(--clr-primary));
+        padding: .5em 1.25em;
         margin-right: auto;
         border: 1px solid transparent;
         transition: all 400ms ease-in-out;
     
         &:hover {
             background-color: hsl(var(--clr-white));
-            color: hsl(var(--clr-primary-dark));
-            box-shadow: -6px 6px 10px -2px hsla(var(--clr-black), .5);
+            color: hsl(var(--clr-secondary));
+            box-shadow: -4px 4px 7px -2px hsla(var(--clr-black), .5);
             // scale: 1.01;
         }
 
@@ -114,15 +135,15 @@
         margin-left: .25em;
     }
 
-    .photo-placeholder {
-        background-color: hsl(var(--clr-primary));
-        overflow: hidden;
+    // .photo-placeholder {
+    //     background-color: hsl(var(--clr-primary));
+    //     overflow: hidden;
 
-        &:hover .featured__photo {
-            transform: scale(1.2);
-            opacity: .75;
-        }            
-    }
+    //     &:hover .featured__photo {
+    //         transform: scale(1.2);
+    //         opacity: .75;
+    //     }            
+    // }
     
     &__photo {
         width: 100%;

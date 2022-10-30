@@ -1,11 +1,11 @@
 @use  './breakpoints' as b;
 
 @mixin container {
-    width: min(100% - 10%, 1200px);
+    width: min(100% - 12%, 1200px);
     margin: 0 auto;
 
     @include b.breakpoint-up(md) {
-        width: min(100% - 10%, 1200px);
+        width: min(100% - 12%, 1200px);
     }
 }
 

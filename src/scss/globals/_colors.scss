@@ -1,28 +1,26 @@
 :root {
     --clr-black: 0, 0%, 0%;
     --clr-white: 0, 0%, 100%;
-    --clr-gray: 180, 4%, 50%;
-    --clr-gray-dark: 160, 5%, 12%;
-    --clr-gray-light: 180, 20%, 86%;
-    --clr-primary: 174, 100%, 46%;
-    --clr-primary-dark: 174, 95%, 25%;
-    --clr-primary-light: 174, 100%, 75%;
-    --clr-accent: 52, 100%, 86%;
-    --clr-accent-dark: 52, 74%, 27%;
-    --clr-accent-light: 52, 91%, 91%;
+    --clr-gray: 0, 0%, 50%;
+    --clr-gray-light: 240, 1%, 83%;
+    --clr-primary: 90, 75%, 31%;
+    --clr-primary-light: 100, 50%, 95%;
+    --clr-primary-dark: 98, 39%, 12%;
+    --clr-secondary: 255, 5%, 16%;
+    --clr-secondary-light: 307, 6%, 30%;
+    --clr-accent: 18, 26%, 50%;
 }
 
 .temp2 {
     --clr-black: hsl(0, 0%, 0%);
     --clr-white: hsl(0, 0%, 100%);
-    --clr-gray: hsl(180, 4%, 50%);
-    --clr-gray-dark: hsl(160, 5%, 12%);
-    --clr-gray-light: hsl(180, 20%, 86%);
-    --clr-primary: hsl(174, 100%, 46%);
-    --clr-primary-dark: hsl(174, 91%, 25%);
-    --clr-primary-light: hsl(174, 100%, 75%);
-    --clr-accent: hsl(52, 100%, 86%);
-    --clr-accent-dark: hsl(52, 74%, 27%);
-    --clr-accent-light: hsl(52, 91%, 91%);
+    --clr-gray: hsl(0, 0%, 50%);
+    --clr-gray-light: hsl(240, 1%, 83%);
+    --clr-primary: hsl(90, 75%, 31%);
+    --clr-primary-light: hsl(100, 50%, 95%);
+    --clr-primary-dark: hsl(98, 39%, 12%);
+    --clr-secondary: hsl(255, 5%, 16%);
+    --clr-secondary-light: hsl(307, 6%, 30%);
+    --clr-accent: hsl(18, 26%, 50%);
 }
 

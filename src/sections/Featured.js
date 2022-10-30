@@ -7,6 +7,7 @@ export default function Featured() {
     return (
         <div className='featured' name="my-work">
             <div className="container">
+                <span className='square-bg'></span>
                 <div className="left">
                     <h3 className="featured__secondary-title">React App</h3>
                     <h2 className="featured__title">Movie Watchlist</h2>
