@@ -176,9 +176,9 @@
     // align-items: center;
 
     &__item {
-        font-size: var(--fs-xs);
+        font-size: var(--fs-small);
         font-weight: var(--fw-semi-bold);
-        text-transform: uppercase;
+        text-transform: capitalize;
         margin-left: 2em;
 
         .link {

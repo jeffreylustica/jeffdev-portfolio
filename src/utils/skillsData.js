@@ -9,7 +9,7 @@ const data = [
     {id: 5, brandName: "Sass", classname:"brand__sass", brandIcon: faSass , brandDesc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cumque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cumque."},
     {id: 6, brandName: "Bootstrap", classname:"brand__bootstrap", brandIcon: faBootstrap , brandDesc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cumque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cumque."},
     {id: 7, brandName: "Git", classname:"brand__git", brandIcon: faGit , brandDesc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cumque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cumque."},
-    {id: 8, brandName: "NodeJs", classname:"brand__nodejs", brandIcon: faNodeJs , brandDesc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cumque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cumque."},
+    // {id: 8, brandName: "NodeJs", classname:"brand__nodejs", brandIcon: faNodeJs , brandDesc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cumque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cumque."},
     {id: 9, brandName: "Figma", classname:"brand__figma", brandIcon: faFigma , brandDesc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cumque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cumque."}
 ]
 

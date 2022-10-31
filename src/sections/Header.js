@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import { Link } from 'react-scroll'
-import logo from '../images/logo24.svg'
+import logo from '../images/logo.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLaptopCode, faGears } from '@fortawesome/free-solid-svg-icons'
 import { faFileCode, faCalendar, faAddressBook, } from '@fortawesome/free-regular-svg-icons'

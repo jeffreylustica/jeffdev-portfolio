@@ -1,7 +1,7 @@
 import React, {useState, useRef, useEffect} from 'react'
 import emailjs from '@emailjs/browser'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPhone, faEnvelope, faPaperPlane } from '@fortawesome/free-solid-svg-icons'
+import { faPhone, faEnvelope, faPaperPlane, faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import { faFacebookF, faGithub, faLinkedinIn, } from '@fortawesome/free-brands-svg-icons'
 import Alert from '../components/Alert'
 import Modal from '../components/Modal'
@@ -58,6 +58,7 @@ export default function Contact() {
                     <div className="contact__right contact__links">
                         <p className="contact__option">or call me at </p>
                         <span className='contact__info'><FontAwesomeIcon className='contact__icon' icon={faPhone} />0906 007 8013</span>
+                        <span className='contact__info'><FontAwesomeIcon className='contact__icon' icon={faLocationDot} />080 Tenejero, Candaba, Pampanga</span>
                         {/* <span><FontAwesomeIcon className='contact__icon' icon={faEnvelope} />jefflustica2@gmail.com</span> */}
 
                         <div className="social__icons">

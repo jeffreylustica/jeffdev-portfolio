@@ -28,7 +28,7 @@
 
     @include u.breakpoint-up(lg) {
         &__actions {
-            gap: 6em;
+            gap: 4em;
         }
     }
 
@@ -80,7 +80,11 @@
     &__info {
         display: flex;
         align-items: center;
-        margin-bottom: 2em;
+        margin-bottom: 1em;
+
+        &:last-of-type {
+            margin-bottom: 2em;
+        }
     }
 
     &__icon {

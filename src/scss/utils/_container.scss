@@ -5,7 +5,7 @@
     margin: 0 auto;
 
     @include b.breakpoint-up(md) {
-        width: min(100% - 12%, 1200px);
+        width: min(100% - 15%, 1200px);
     }
 }
 

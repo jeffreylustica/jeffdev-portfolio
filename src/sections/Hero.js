@@ -12,8 +12,9 @@ function Hero(props, ref) {
             <div className="container">
                 <div className="left">
                     {/* <p className="greeting">Hi, I am <strong className="name">Jeffrey Lustica</strong></p> */}
-                    <h1 className="intro">Overcome obstacles, let's make it together.</h1>
-                    <p className='intro-desc'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cumque. Nemo necessitatibus minus consectetur dolorum aperiam ullam voluptate cum error?</p>
+                    <h1 className="intro">Develop from good to unimaginable user experience.</h1>
+                    {/* <h3>Front-end Web Developer</h3> */}
+                    <p className='intro-desc'>Ensures that your website visitors can easily interact with the page by designing, programming and with technology.</p>
 
                     {/* <div className="hero__icons">
                         <a href="#" className="hero__links">
