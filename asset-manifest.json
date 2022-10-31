@@ -1,24 +1,26 @@
 {
   "files": {
-    "main.css": "/jeffdev-portfolio/static/css/main.ae17e6e6.css",
-    "main.js": "/jeffdev-portfolio/static/js/main.eed0cbab.js",
+    "main.css": "/jeffdev-portfolio/static/css/main.9ce6c76e.css",
+    "main.js": "/jeffdev-portfolio/static/js/main.b7968591.js",
+    "static/media/pic-some.png": "/jeffdev-portfolio/static/media/pic-some.a0b91a7d79a74a50bd60.png",
     "static/media/hero-bg2.jpg": "/jeffdev-portfolio/static/media/hero-bg2.9a0f3a75b805b6378138.jpg",
     "static/media/movie-watchlist-dark2.png": "/jeffdev-portfolio/static/media/movie-watchlist-dark2.a026fa3df3a0440d8fe6.png",
-    "static/media/color-scheme-generator.png": "/jeffdev-portfolio/static/media/color-scheme-generator.c2a5adc25fa844e91648.png",
     "static/media/jeffrey.f.lustica-resume.pdf": "/jeffdev-portfolio/static/media/jeffrey.f.lustica-resume.559b987f94a2d0fe1624.pdf",
     "static/media/password-generator.png": "/jeffdev-portfolio/static/media/password-generator.d6e9d8ea05c44ce65ecf.png",
-    "static/media/quizzical-app.png": "/jeffdev-portfolio/static/media/quizzical-app.5ff474bacbc37640ff7f.png",
+    "static/media/color-scheme-generator.png": "/jeffdev-portfolio/static/media/color-scheme-generator.2ac296398706e9267fb9.png",
+    "static/media/quizzical-app.png": "/jeffdev-portfolio/static/media/quizzical-app.3ae37d0d8241d8769afe.png",
+    "static/media/math-wizard-rpg.png": "/jeffdev-portfolio/static/media/math-wizard-rpg.1fc909884e81dd613d1b.png",
     "static/media/logo24.svg": "/jeffdev-portfolio/static/media/logo24.5558763a87e1a4198e84f58ec72c225e.svg",
     "index.html": "/jeffdev-portfolio/index.html",
     "static/media/arrow-down.svg": "/jeffdev-portfolio/static/media/arrow-down.2649d646c67e98011b13.svg",
     "static/media/arrow.svg": "/jeffdev-portfolio/static/media/arrow.2a85537f2a6b2c427a17de5d3d7e4548.svg",
     "static/media/square-bg.svg": "/jeffdev-portfolio/static/media/square-bg.722ca963f912645c4862.svg",
     "static/media/square-small-bg.svg": "/jeffdev-portfolio/static/media/square-small-bg.1fcaa4160d87a386d264.svg",
-    "main.ae17e6e6.css.map": "/jeffdev-portfolio/static/css/main.ae17e6e6.css.map",
-    "main.eed0cbab.js.map": "/jeffdev-portfolio/static/js/main.eed0cbab.js.map"
+    "main.9ce6c76e.css.map": "/jeffdev-portfolio/static/css/main.9ce6c76e.css.map",
+    "main.b7968591.js.map": "/jeffdev-portfolio/static/js/main.b7968591.js.map"
   },
   "entrypoints": [
-    "static/css/main.ae17e6e6.css",
-    "static/js/main.eed0cbab.js"
+    "static/css/main.9ce6c76e.css",
+    "static/js/main.b7968591.js"
   ]
 }
