@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/jeffdev-portfolio/static/css/main.1fd8bfa7.css",
-    "main.js": "/jeffdev-portfolio/static/js/main.dd626cdd.js",
+    "main.css": "/jeffdev-portfolio/static/css/main.672e8d5e.css",
+    "main.js": "/jeffdev-portfolio/static/js/main.09622c4f.js",
     "static/media/pic-some.png": "/jeffdev-portfolio/static/media/pic-some.376694e5eea7fd46c0bf.png",
     "static/media/movie-watchlist-dark.png": "/jeffdev-portfolio/static/media/movie-watchlist-dark.4ce07002293a7d369f0a.png",
     "static/media/jeffrey.f.lustica-resume.pdf": "/jeffdev-portfolio/static/media/jeffrey.f.lustica-resume.559b987f94a2d0fe1624.pdf",
@@ -16,11 +16,11 @@
     "static/media/arrow.svg": "/jeffdev-portfolio/static/media/arrow.2a85537f2a6b2c427a17de5d3d7e4548.svg",
     "static/media/square-bg.svg": "/jeffdev-portfolio/static/media/square-bg.722ca963f912645c4862.svg",
     "static/media/square-small-bg.svg": "/jeffdev-portfolio/static/media/square-small-bg.1fcaa4160d87a386d264.svg",
-    "main.1fd8bfa7.css.map": "/jeffdev-portfolio/static/css/main.1fd8bfa7.css.map",
-    "main.dd626cdd.js.map": "/jeffdev-portfolio/static/js/main.dd626cdd.js.map"
+    "main.672e8d5e.css.map": "/jeffdev-portfolio/static/css/main.672e8d5e.css.map",
+    "main.09622c4f.js.map": "/jeffdev-portfolio/static/js/main.09622c4f.js.map"
   },
   "entrypoints": [
-    "static/css/main.1fd8bfa7.css",
-    "static/js/main.dd626cdd.js"
+    "static/css/main.672e8d5e.css",
+    "static/js/main.09622c4f.js"
   ]
 }
