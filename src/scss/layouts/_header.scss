@@ -63,7 +63,7 @@
 
                 .nav-list__item {
                     font-size: var(--fs-small);
-                    animation: showItemsUp 400ms ease-in-out both 0.5s;
+                    animation: fadeInBottom 700ms ease-in-out both 0.5s;
                 }
     
                 @for $i from 1 through 5 {

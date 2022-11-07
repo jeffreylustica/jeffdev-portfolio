@@ -1,26 +1,39 @@
-import {useRef, useState, useEffect} from "react";
+import {useEffect, useRef} from 'react'
 
-export default function useObserver(options, perform) {
-    const ref = useRef(null)
-    const [isElVisible, setIsElVisible] = useState(false)
+export default function useObserver(options) {
+    const intersectedRef = useRef([])
+    intersectedRef.current = []
+
+    function addToRefs(elRef) {
+        if (elRef) {
+            intersectedRef.current.push(elRef)
+            console.log(elRef.dataset.transitionClass)
+        }
+    }
+
 
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
-            const entry = entries[0]
-            if (entry.isIntersecting && perform.once) {
-                setIsElVisible(entry.isIntersecting)
-                observer.unobserve(ref.current)
-            } else {
-                setIsElVisible(entry.isIntersecting)
-            }
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const refClassName = entry.target.dataset.transitionClass
+                    console.log(entry.target)
+                    entry.target.classList.add(refClassName)
+                    observer.unobserve(entry.target)
+                }
+            })
         }, options)
 
-        observer.observe(ref.current)
+        intersectedRef.current.forEach(ref => {
+            observer.observe(ref)
+        })
 
-        return () => observer.disconnect()
+        return () => {
+            observer.disconnect()
+        }
 
     }, [])
 
-    return [ref, isElVisible]
+    return [addToRefs]  
 }
 

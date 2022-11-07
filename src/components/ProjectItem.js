@@ -1,26 +1,25 @@
 import React from 'react'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faArrowUpRightFromSquare} from '@fortawesome/free-solid-svg-icons'
+import useObserver from '../hooks/useObserver'
 
-export default function ProjectItem({data, idx}) {
-    const {imgAreaClass, source, infoAreaClass, infoTextClass, secondaryTitle, mainTitle, desc, link} = data
+export default function ProjectItem({data}) {
+    const {source, secondaryTitle, mainTitle, desc, link} = data
+    
+    const [addToRefs] = useObserver({rootMargin: "0px 0px -100px 0px"})
 
     return (
-        <div className="project-item">
-            <div className={`container ${idx === 0 && "project-container-1"}`}>
-                <div className={`project__image-container ${imgAreaClass}`}>
-                    <div className="project__image-placeholder">
-                        <img className='project__image' src={source} alt="project screenshot" />
-                    </div>
-                </div>
-                <div className={`project__info ${infoAreaClass} ${infoTextClass}`}>
-                    <h3 className="secondary-title">{secondaryTitle}</h3>
-                    <h1 className="main-title">{mainTitle}</h1>
-                    <p className="desc">
-                       {desc}
-                    </p>
-                    <a href={`${link}`} target={`_blank`} className="project__link">View Project <FontAwesomeIcon icon={faArrowUpRightFromSquare}/></a>
-                </div>
+        <div className="projects__item fadeLeft" ref={addToRefs} data-transition-class="fadeInX">
+            <div className="project__image-placeholder">
+                <img className='project__image' src={source} alt="" />
+                <a href={link} className="project__link">View Project <FontAwesomeIcon className="link__icon" icon={faArrowUpRightFromSquare}/></a>
+            </div>
+            <div className="content">
+                <p className="secondary-title">{secondaryTitle}</p>
+                <h3 className="main-title">{mainTitle}</h3>
+                <p className="desc">
+                    {desc}
+                </p>
             </div>
         </div>
     )

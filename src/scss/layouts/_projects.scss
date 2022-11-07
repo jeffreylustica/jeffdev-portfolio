@@ -2,7 +2,7 @@
 
 .projects {
     padding: 6em 0 10em;
-    background-color: hsla(var(--clr-primary-light), 1);
+    // background-color: hsla(var(--clr-primary-light), 1);
 
     .container {
         position: relative;
@@ -27,7 +27,9 @@
 
     &__item {
         // display: grid;
-        transition: all 300ms ease-in-out;
+        transition: box-shadow 300ms ease-in-out,
+                    transform 1s ease-in-out 500ms, 
+                    opacity 1s ease-in-out 500ms;
         // overflow: hidden;
         // border: 1px solid hsla(var(--clr-black), .1);
         // box-shadow: -2px 2px 15px -8px hsla(var(--clr-black), .75);
@@ -87,7 +89,8 @@
         // flex-direction: column;
         // justify-content: center;
         padding: 1em;
-        background-color: hsl(var(--clr-white));
+        // background-color: hsl(var(--clr-gray-light));
+        background-color: rgb(230, 230, 230);
         height: calc(100% - 230px);
     }
 
