@@ -9,7 +9,7 @@
         position: relative;
 
         &::before {
-            content: 'Contact';
+            content: 'Let\0027s connect';
             position: absolute;
             top: -1.4em;
             left: 0;
@@ -49,7 +49,19 @@
             border: none;
             border-radius: .25em;
             color: hsl(var(--clr-white));
-            background-color: hsl(var(--clr-secondary));
+            background-color: hsl(var(--clr-primary-dark));
+
+            &::placeholder {
+                color: hsla(var(--clr-white), .325);
+            }
+
+            &:-webkit-autofill,
+            &:-webkit-autofill,
+            &:-webkit-autofill {
+                box-shadow: 0 0 0 1000px hsl(var(--clr-primary-dark)) inset !important;
+                -webkit-box-shadow: 0 0 0 1000px hsl(var(--clr-primary-dark)) inset !important;
+                -webkit-text-fill-color: white !important;
+            }
         }
 
         .submit-btn {
@@ -68,7 +80,7 @@
 
                 background-color: hsl(var(--clr-white));
                 color: hsl(var(--clr-secondary));
-                border: 1px solid hsl(var(--clr-gray-light));   
+                border: 1px solid hsl(var(--clr-secondary));   
                 box-shadow: -4px 4px 7px -2px hsla(var(--clr-black), .5);
             }
         }
@@ -127,7 +139,7 @@
             height: 1em;
             // background-color: hsla(var(--clr-black), .135);
             border-radius: 50%;
-            border: 1px solid hsla(var(--clr-black), .25);
+            border: 1px solid hsla(var(--clr-gray-dark), .25);
             padding: .5em;
             transition: all 400ms ease-in-out;
 
@@ -145,7 +157,7 @@
     
         @for $i from 1 through 4 {
             .social__links:nth-child(#{$i}) {
-                animation-delay: ($i * 0.25s) + 0.15s;
+                animation-delay: $i * 0.15s;
             }
         }
     }

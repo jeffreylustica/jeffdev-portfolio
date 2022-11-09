@@ -62,7 +62,7 @@ export default function Contact() {
             {modal && <Modal closeModal = {closeModal}/>}
             {/* <Modal /> */}
             <div className="container">
-                <h2 className="sub-title">Let's connect.</h2>
+                {/* <h2 className="sub-title">Let's connect.</h2> */}
                 <p className="contact__message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cumque. Nemo </p>
                 <div className="contact__actions">
                     <form ref={mergeRefs(form, addToRefs)} onSubmit={sendEmail} className="contact__left contact__form fadeBottom" data-transition-class="fadeInY">
@@ -81,22 +81,20 @@ export default function Contact() {
                         {/* <span><FontAwesomeIcon className='contact__icon' icon={faEnvelope} />jefflustica2@gmail.com</span> */}
 
                         <div className="social__icons">
-                            <a href="#" className="social__links">
+                            <a href="https://www.facebook.com/jeffrey.lustica.9" target="_blank" className="social__links">
                                 <FontAwesomeIcon className='social__icon' icon={faFacebookF} />
                             </a>
-                            <a href="#" className="social__links">
+                            <a href="https://www.linkedin.com/in/jeffrey-lustica-8178b5229" target="_blank"  className="social__links">
                                 <FontAwesomeIcon className='social__icon' icon={faLinkedinIn} />
                             </a>
-                            <a href="#" className="social__links">
+                            <a href="https://github.com/jeffnew1" target="_blank" className="social__links">
                                 <FontAwesomeIcon className='social__icon' icon={faGithub} />
                             </a>
                             <a href="mailto:jefflustica@gmail.com" target={'_blank'} className="social__links">
                                 <FontAwesomeIcon className='social__icon' icon={faEnvelope} />
                             </a>
                         </div>
-
                     </div>
-
                 </div>
             </div>
         </div>

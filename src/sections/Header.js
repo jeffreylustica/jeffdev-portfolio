@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import { Link } from 'react-scroll'
-import logo from '../images/logo.svg'
+import LogoVector from '../components/LogoVector'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLaptopCode, faGears } from '@fortawesome/free-solid-svg-icons'
 import { faFileCode, faCalendar, faAddressBook, } from '@fortawesome/free-regular-svg-icons'
@@ -34,7 +34,8 @@ export default function Header({isElVisible}) {
             <img className='logo' src={logo} alt="website logo"/>
           </a> */}
           <Link to="hero" spy={true} smooth={true} offset={-100} duration={500}  className="logo-link">
-            <img className={`logo ${activeNav}`} src={logo} alt="website logo"/>
+            {/* <img className="logo" src={logo} alt="website logo"/> */}
+            <LogoVector />
           </Link>
 
           <nav className={`nav ${activeNav}`}>

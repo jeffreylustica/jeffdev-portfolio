@@ -14,7 +14,7 @@ function Hero(props, ref) {
             <div className="container">
                 <div className="left">
                     {/* <p className="greeting">Hi, I am <strong className="name">Jeffrey Lustica</strong></p> */}
-                    <h1 className={`intro fadeBottom`} ref={addToRefs} data-transition-class="fadeInY">Develop from good to unimaginable user experience.</h1>
+                    <h1 className={`intro fadeBottom`} ref={addToRefs} data-transition-class="fadeInY">Develop from good to unimaginable <span className='intro__accent'>user experience.</span> </h1>
                     {/* <h3>Front-end Web Developer</h3> */}
                     <p className={`intro-desc fadeBottom`} ref={addToRefs} data-transition-class="fadeInY">Ensures that your website visitors can easily interact with the page by designing, programming and with technology.</p>
 

@@ -4,15 +4,21 @@ import {faArrowUpRightFromSquare} from '@fortawesome/free-solid-svg-icons'
 import useObserver from '../hooks/useObserver'
 
 export default function ProjectItem({data}) {
-    const {source, secondaryTitle, mainTitle, desc, link} = data
+    const {source, secondaryTitle, mainTitle, desc, tags, link} = data
     
-    const [addToRefs] = useObserver({rootMargin: "0px 0px -100px 0px"})
+    const [addToRefs] = useObserver()
+
+    const tagsEl = tags.map(tag => {
+        return (
+            <span>{tag}</span>
+        )
+    })
 
     return (
         <div className="projects__item fadeLeft" ref={addToRefs} data-transition-class="fadeInX">
             <div className="project__image-placeholder">
                 <img className='project__image' src={source} alt="" />
-                <a href={link} className="project__link">View Project <FontAwesomeIcon className="link__icon" icon={faArrowUpRightFromSquare}/></a>
+                <a href={link} target="_blank" className="project__link">View Project <FontAwesomeIcon className="link__icon" icon={faArrowUpRightFromSquare}/></a>
             </div>
             <div className="content">
                 <p className="secondary-title">{secondaryTitle}</p>
@@ -20,6 +26,9 @@ export default function ProjectItem({data}) {
                 <p className="desc">
                     {desc}
                 </p>
+                <div className="tags">
+                    {tagsEl}
+                </div>
             </div>
         </div>
     )

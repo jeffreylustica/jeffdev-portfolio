@@ -15,6 +15,15 @@ export default function Featured() {
                     <h3 className="featured__secondary-title">React App</h3>
                     <h2 className="featured__title">Movie Watchlist</h2>
                     <p className="featured__desc">Application that let you save your favorite movie to watch. This app was created using react library, I've used npm react router dom to make the app SPA.</p>
+                    <div className="featured__tags">
+                        <span>React Js</span>
+                        <span>React Context</span>
+                        <span>Custom Hooks</span>
+                        <span>Controlled Components</span>
+                        <span>SPA</span>
+                        <span>API</span>
+                        <span>Git</span>
+                    </div>
                     <a href="https://jeffnew1.github.io/react-movie-watchlist/" target={`_blank`} className="featured__link">View Project <FontAwesomeIcon className="link__icon" icon={faArrowUpRightFromSquare}/>
                     </a>
                 </div>

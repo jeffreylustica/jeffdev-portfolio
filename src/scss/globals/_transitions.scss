@@ -1,19 +1,19 @@
 .fadeLeft {
     opacity: 0;
     transform: translateX(-200px);
-    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+    transition: transform 700ms ease-in-out, opacity 700ms ease-in-out;
 }
 
 .fadeRight {
     opacity: 0;
     transform: translateX(200px);
-    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+    transition: transform 700ms ease-in-out, opacity 700ms ease-in-out;
 }
 
 .fadeBottom {
     opacity: 0;
     transform: translateY(200px);
-    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+    transition: transform 700ms ease-in-out, opacity 700ms ease-in-out;
 }
 
 .fadeInY {
@@ -29,11 +29,11 @@
 
 .fade {
     opacity: 0;
-    transition: opacity 1s ease-in-out;
+    transition: opacity 700ms ease-in-out;
 }
 
 .fadeInScale {
     opacity: 1;
-    transition: opacity 1s ease-in-out;
-    animation: balloon 1s forwards ease-in-out 500ms;
+    transition: opacity 700ms ease-in-out;
+    animation: balloon 700ms forwards ease-in-out 500ms;
 }
