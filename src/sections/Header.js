@@ -19,10 +19,6 @@ export default function Header({isElVisible}) {
     setIsNavActive(false)
     scrollUnlock()
   }
-  
-  // useEffect(() => {
-  //   document.body.style.overflowY = isNavActive ? "hidden" : "auto"
-  // }, [isNavActive])
 
   const activeNav = isNavActive && "active"
   const scrolledNavClass = !isElVisible && "scrolledClass"
@@ -30,11 +26,7 @@ export default function Header({isElVisible}) {
   return (
     <header className={`header ${scrolledNavClass}`} ref={ref}>
       <div className="container">
-          {/* <a href="#" className="logo-link">
-            <img className='logo' src={logo} alt="website logo"/>
-          </a> */}
           <Link to="hero" spy={true} smooth={true} offset={-100} duration={500}  className="logo-link">
-            {/* <img className="logo" src={logo} alt="website logo"/> */}
             <LogoVector />
           </Link>
 
@@ -76,8 +68,6 @@ export default function Header({isElVisible}) {
           <div className={`menu-btn ${activeNav}`} onClick={toggleNav}>
             <div className="burger"></div>
           </div>
-
-          {/* <button className={`log-in-btn ${activeNav}`}>Log in</button> */}
       </div>
     </header>
   )

@@ -1,9 +1,7 @@
 import React from 'react'
 import resume from '../files/jeffrey.f.lustica-resume.pdf'
-import arrow from '../images/arrow.svg'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faFacebookF, faLinkedinIn, faGithub, enve} from '@fortawesome/free-brands-svg-icons'
-import {faEnvelope, faDownload, faFileArrowDown,faArrowDown} from '@fortawesome/free-solid-svg-icons'
+import {faFileArrowDown} from '@fortawesome/free-solid-svg-icons'
 import useObserver from '../hooks/useObserver'
 
 function Hero(props, ref) {
@@ -13,40 +11,13 @@ function Hero(props, ref) {
         <div className='hero' name="hero" ref={ref}>
             <div className="container">
                 <div className="left">
-                    {/* <p className="greeting">Hi, I am <strong className="name">Jeffrey Lustica</strong></p> */}
                     <h1 className={`intro fadeBottom`} ref={addToRefs} data-transition-class="fadeInY">Develop from good to unimaginable <span className='intro__accent'>user experience.</span> </h1>
-                    {/* <h3>Front-end Web Developer</h3> */}
                     <p className={`intro-desc fadeBottom`} ref={addToRefs} data-transition-class="fadeInY">Ensures that your website visitors can easily interact with the page by designing, programming and with technology.</p>
 
-                    {/* <div className="hero__icons">
-                        <a href="#" className="hero__links">
-                            <FontAwesomeIcon className='hero__icon' icon={faFacebookF} />
-                        </a>
-                        <a href="#" className="hero__links">
-                            <FontAwesomeIcon className='hero__icon' icon={faLinkedinIn} />
-                        </a>
-                        <a href="#" className="hero__links">
-                            <FontAwesomeIcon className='hero__icon' icon={faGithub} />
-                        </a>
-                        <a href="mailto:jefflustica@gmail.com" target={'_blank'} className="hero__links">
-                            <FontAwesomeIcon className='hero__icon' icon={faEnvelope} />
-                        </a>
-                    </div> */}
-
                     <a href={resume} download="jeffreyLustica-resume" className={`hero__btn fadeLeft`} ref={addToRefs} data-transition-class="fadeInX">Download CV<FontAwesomeIcon icon={faFileArrowDown} className="hero__btn-icon" /> </a> 
-                 
-                    {/* <span className='hero__arrow-container'>
-                        <FontAwesomeIcon className='hero__arrow-down' icon={faArrowDown} />
-                    </span> */}
-                    {/* <button className="hero__btn learn-more-btn">More about me</button> */}
+            
                     <span className="hero__explore">More about me</span>
-
-                    {/* <div className='hero__scroll'></div> */}
                 </div>
-
-                {/* <div className="right">
-                    <h1>Right</h1>
-                </div> */}
             </div>
         </div>
     )

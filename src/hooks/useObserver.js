@@ -32,7 +32,7 @@ export default function useObserver(options) {
             observer.disconnect()
         }
 
-    }, [])
+    }, [intersectedRef])
 
     return [addToRefs]  
 }

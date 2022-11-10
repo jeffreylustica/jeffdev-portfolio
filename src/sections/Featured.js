@@ -12,7 +12,7 @@ export default function Featured() {
             <div className="container">
                 <span className='square-bg'></span>
                 <div className={`left fadeLeft`} ref={addToRefs} data-transition-class="fadeInX">
-                    <h3 className="featured__secondary-title">React App</h3>
+                    {/* <h3 className="featured__secondary-title">React App</h3> */}
                     <h2 className="featured__title">Movie Watchlist</h2>
                     <p className="featured__desc">Application that let you save your favorite movie to watch. This app was created using react library, I've used npm react router dom to make the app SPA.</p>
                     <div className="featured__tags">

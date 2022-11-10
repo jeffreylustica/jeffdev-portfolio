@@ -13,8 +13,12 @@
             position: absolute;
             top: -1.4em;
             left: 0;
-            font-size: 4em;
+            font-size: 2.7rem;
             color: hsla(var(--clr-black), .1);
+
+            @include u.breakpoint-up(sm) {
+                font-size: 4rem;
+            }
         }
     }
 
@@ -36,9 +40,6 @@
     &__form {
         display: flex;
         flex-direction: column;
-        // background-color: hsl(var(--clr-white));
-        // border: 1px solid hsl(var(--clr-black));
-        // padding: 2em;
         margin-bottom: 2em;
 
         & > * {
@@ -75,9 +76,6 @@
             align-self: flex-start;
 
             &:hover {
-                // color: hsl(var(--clr-secondary));
-                // background-color: hsla(var(--clr-primary), .75); 
-
                 background-color: hsl(var(--clr-white));
                 color: hsl(var(--clr-secondary));
                 border: 1px solid hsl(var(--clr-secondary));   
@@ -85,10 +83,6 @@
             }
         }
     }
-
-    // &__links {
-    //     border: 1px solid firebrick;
-    // }
 
     &__info {
         display: flex;
@@ -105,7 +99,6 @@
     }
 
     &__option {
-        // margin-top: 2em;
         font-size: var(--fs-h3);
         font-weight: var(--fw-bold);
         position: relative;
@@ -117,7 +110,6 @@
             position: absolute;
             top: 40%;
             right: -100%;
-            // transform: scale(.75) rotate(15deg);
         }
     }
 
@@ -134,10 +126,9 @@
 
         .social__icon {
             color: hsl(var(--clr-black));
-            font-size: 1.25em;
+            font-size: 1.25rem;
             width: 1em;
             height: 1em;
-            // background-color: hsla(var(--clr-black), .135);
             border-radius: 50%;
             border: 1px solid hsla(var(--clr-gray-dark), .25);
             padding: .5em;

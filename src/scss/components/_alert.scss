@@ -18,24 +18,4 @@
     @include u.breakpoint-up(md) {
         min-width: 350px;
     }
-
-    // &__check {
-    //     margin: 0 1em;    
-    // }
-
-    // &__check, &__close {
-    //     font-size: 1.5em;
-    // }
-    // &__message {
-        
-    // }
-
-    // &__close-btn {
-    //     border: none;
-    //     background-color: hsla(var(--clr-primary), .25);
-    //     padding: 1em;
-    //     cursor: pointer;
-    //     color: hsl(var(--clr-white));
-    // }
-
 }

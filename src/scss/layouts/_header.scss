@@ -2,7 +2,6 @@
 
 .header {
     color: hsl(var(--clr-white));
-    // background-color: hsla(var(--clr-black), .75);
     box-shadow: 0px 5px 10px -8px hsla(var(--clr-white), .5);
     position: fixed;
     width: 100%;
@@ -78,7 +77,6 @@
         }
 
         .nav-list {
-            // margin-top: 5em;
             flex-direction: column;
             justify-content: center;
             height: 100vh;
@@ -90,17 +88,14 @@
                 .link {
                     display: inline-block;
                     text-align: center;
-                    // border: 1px solid firebrick;
-                    // width: 6em;
                 }
             }
             
             .nav__link-icon {
                 display: inline-block;
-                font-size: 1.5em;
+                font-size: 1.325rem;
                 width: 1em;
                 margin-right: .5em;
-                // border: 1px solid goldenrod;
             }
         }
         
@@ -156,8 +151,6 @@
 
     &.active {
          width: 26px;
-        //  transform: rotate(720deg) translateX(9px);
-        //  transform: translateX(9px);
 
          .burger {
             background-color: transparent;
@@ -175,7 +168,6 @@
 
 .nav-list {
     display: flex;
-    // align-items: center;
 
     &__item {
         font-size: var(--fs-small);
@@ -198,13 +190,11 @@
                 width: 100%;
                 transform: scaleX(0);
                 background-color: hsl(var(--clr-primary));
-                // transform-origin: 0% 100%;
                 transition: transform 400ms ease-in-out;
                 z-index: -1;
             }
 
             &:hover {
-                // color: hsl(var(--clr-primary));
                 
                 &::before {
                     transform: scaleX(1);
@@ -212,7 +202,6 @@
             }
             
             &.active {
-                // color: hsl(var(--clr-primary));
                 
                 &::before {
                     transform: scaleX(1);

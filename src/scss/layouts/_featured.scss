@@ -5,7 +5,6 @@
     padding: 4.5em 0 10em;
     
     .container {
-        // @include u.container;
         position: relative;
         display: grid;
         grid-template-columns: 1fr;
@@ -19,7 +18,7 @@
             position: absolute;
             top: -1.4em;
             left: 6vw;
-            font-size: 4em;
+            font-size: 4rem;
             color: hsla(var(--clr-black), .1);
         }
 
@@ -76,7 +75,6 @@
                 padding: 1.25em;
                 align-self: center;
                 width: 110%;
-                // min-width: 400px;
                 position: relative;
                 z-index: 5;
                 box-shadow: -6px 10px 10px -8px hsla(var(--clr-black), .5);
@@ -87,7 +85,6 @@
             .right {
                 align-self: center;
                 width: 140%;
-                // min-width: 400px;
             }
 
             .photo-placeholder {
@@ -108,16 +105,11 @@
             position: absolute;
             left: 0;
             bottom: 0;
-            height: .25em;
+            height: .175em;
             width: 50%;
             background: linear-gradient(90deg, hsl(var(--clr-primary)) 45%, hsl(var(--clr-accent)) 85%);
             transform: translateX(-20%);
         }
-    }
-    
-    &__secondary-title {
-        font-weight: var(--fw-normal);
-        margin-bottom: 0;
     }
 
     &__desc {
@@ -149,7 +141,6 @@
             background-color: hsl(var(--clr-white));
             color: hsl(var(--clr-secondary));
             box-shadow: -4px 4px 7px -2px hsla(var(--clr-black), .5);
-            // scale: 1.01;
         }
 
         @include u.breakpoint-up(md) {
@@ -159,19 +150,9 @@
     }
 
     .link__icon {
-        font-size: 1.25em;
+        font-size: 1.25rem;
         margin-left: .25em;
     }
-
-    // .photo-placeholder {
-    //     background-color: hsl(var(--clr-primary));
-    //     overflow: hidden;
-
-    //     &:hover .featured__photo {
-    //         transform: scale(1.2);
-    //         opacity: .75;
-    //     }            
-    // }
     
     &__photo {
         width: 100%;

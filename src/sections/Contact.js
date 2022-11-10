@@ -1,4 +1,4 @@
-import React, {useState, useRef, useEffect} from 'react'
+import React, {useState, useRef} from 'react'
 import emailjs from '@emailjs/browser'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone, faEnvelope, faPaperPlane, faLocationDot } from '@fortawesome/free-solid-svg-icons'
@@ -50,7 +50,6 @@ export default function Contact() {
             if (typeof inputRef === 'function') {
                 inputRef(ref);
             } else {
-                // eslint-disable-next-line no-param-reassign
                 inputRef.current = ref;
             }
             });
@@ -60,9 +59,7 @@ export default function Contact() {
     return (
         <div className='contact' name="contact">
             {modal && <Modal closeModal = {closeModal}/>}
-            {/* <Modal /> */}
             <div className="container">
-                {/* <h2 className="sub-title">Let's connect.</h2> */}
                 <p className="contact__message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cumque. Nemo </p>
                 <div className="contact__actions">
                     <form ref={mergeRefs(form, addToRefs)} onSubmit={sendEmail} className="contact__left contact__form fadeBottom" data-transition-class="fadeInY">
@@ -78,8 +75,7 @@ export default function Contact() {
                         <p className="contact__option">or call me at </p>
                         <span className='contact__info'><FontAwesomeIcon className='contact__icon' icon={faPhone} />0906 007 8013</span>
                         <span className='contact__info'><FontAwesomeIcon className='contact__icon' icon={faLocationDot} />080 Tenejero, Candaba, Pampanga</span>
-                        {/* <span><FontAwesomeIcon className='contact__icon' icon={faEnvelope} />jefflustica2@gmail.com</span> */}
-
+                        
                         <div className="social__icons">
                             <a href="https://www.facebook.com/jeffrey.lustica.9" target="_blank" className="social__links">
                                 <FontAwesomeIcon className='social__icon' icon={faFacebookF} />

@@ -27,7 +27,7 @@ export default function Timeline() {
                         <span className="event__line"></span>
                     </div>
                     <div className="event__info fadeRight" ref={addToRefs} data-transition-class="fadeInX">
-                        <small className="event__date">June 2 2012 - October 2 2016</small>
+                        <small className="event__date">September 23 2016 - January 15 2022</small>
                         <h2 className="event__company">Accenture</h2>
                         <p className="event__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cumque. Nemo necessitatibus minus consectetur dolorum aperiam ullam voluptate cum error? Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cumque. Nemo necessitatibus minus consectetur dolorum aperiam ullam voluptate cum error? </p>
                     </div>
@@ -38,7 +38,7 @@ export default function Timeline() {
                         <FontAwesomeIcon icon={faLaptopCode} className="event__fa-icon fade" ref={addToRefs} data-transition-class="fadeInScale" /> 
                     </div>
                     <div className="event__info fadeRight" ref={addToRefs} data-transition-class="fadeInX">
-                        <small className="event__date">June 2 2012 - October 2 2016</small>
+                        <small className="event__date">January 25 2022 - July 25 2022</small>
                         <h2 className="event__company">Scrimba AS</h2>
                         <p className="event__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cumque. Nemo necessitatibus minus consectetur dolorum aperiam ullam voluptate cum error? Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cumque. Nemo necessitatibus minus consectetur dolorum aperiam ullam voluptate cum error? </p>
                     </div>

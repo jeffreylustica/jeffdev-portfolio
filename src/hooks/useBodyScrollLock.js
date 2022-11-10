@@ -5,7 +5,6 @@ function useBodyScrollLock() {
     const bodyStyle = document.body.style
     const scrollBarCompensation = window.innerWidth - document.body.offsetWidth
 
-    // const [isLocked, setIsLocked] = useState(bodyStyle.overflowY === 'hidden')
     const [isLocked, setIsLocked] = useState(false)
 
     useEffect(() => {

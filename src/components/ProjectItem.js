@@ -4,7 +4,7 @@ import {faArrowUpRightFromSquare} from '@fortawesome/free-solid-svg-icons'
 import useObserver from '../hooks/useObserver'
 
 export default function ProjectItem({data}) {
-    const {source, secondaryTitle, mainTitle, desc, tags, link} = data
+    const {source, mainTitle, desc, tags, link} = data
     
     const [addToRefs] = useObserver()
 
@@ -21,7 +21,6 @@ export default function ProjectItem({data}) {
                 <a href={link} target="_blank" className="project__link">View Project <FontAwesomeIcon className="link__icon" icon={faArrowUpRightFromSquare}/></a>
             </div>
             <div className="content">
-                <p className="secondary-title">{secondaryTitle}</p>
                 <h3 className="main-title">{mainTitle}</h3>
                 <p className="desc">
                     {desc}
@@ -33,5 +32,3 @@ export default function ProjectItem({data}) {
         </div>
     )
 }
-
-// project-container-1
