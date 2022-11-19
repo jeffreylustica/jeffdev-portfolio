@@ -12,9 +12,8 @@ export default function Featured() {
             <div className="container">
                 <span className='square-bg'></span>
                 <div className={`left fadeLeft`} ref={addToRefs} data-transition-class="fadeInX">
-                    {/* <h3 className="featured__secondary-title">React App</h3> */}
                     <h2 className="featured__title">Movie Watchlist</h2>
-                    <p className="featured__desc">Application that let you save your favorite movie to watch. This app was created using react library, I've used npm react router dom to make the app SPA.</p>
+                    <p className="featured__desc">React web application that allows you to save your watch list and favorite movies. An API server provides the data for it. Using React Router, this application was created as an SPA (Single-Page Application).</p>
                     <div className="featured__tags">
                         <span>React Js</span>
                         <span>React Context</span>

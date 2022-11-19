@@ -1,5 +1,6 @@
 const images = {
     picSome: require('./pic-some.png'),
+    portfolio: require('./portfolio.png'),
     quizzicalApp: require('./quizzical-app.png'),
     mathWizardRpg: require('./math-wizard-rpg.png'),
     colorSchemeGenerator: require('./color-scheme-generator.png'),

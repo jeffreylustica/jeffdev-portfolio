@@ -55,7 +55,8 @@
             right: 0;
             height: auto;
             width: 320px;
-            background-color: hsl(var(--clr-primary-dark));
+            background-color: hsla(var(--clr-black), .95);
+            backdrop-filter: blur(5px);
             transform: translateX(100%);
             transition: all 400ms ease-in-out;
             z-index: 5;

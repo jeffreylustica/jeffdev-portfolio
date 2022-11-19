@@ -11,8 +11,14 @@ function Hero(props, ref) {
         <div className='hero' name="hero" ref={ref}>
             <div className="container">
                 <div className="left">
-                    <h1 className={`intro fadeBottom`} ref={addToRefs} data-transition-class="fadeInY">Develop from good to unimaginable <span className='intro__accent'>user experience.</span> </h1>
-                    <p className={`intro-desc fadeBottom`} ref={addToRefs} data-transition-class="fadeInY">Ensures that your website visitors can easily interact with the page by designing, programming and with technology.</p>
+
+                    <h1 className={`intro fadeBottom`} ref={addToRefs} data-transition-class="fadeInY">
+                        Offers a seamless and engaging <span className='intro__accent'>user experience.</span>
+                    </h1>
+
+                    <p className={`intro-desc fadeBottom`} ref={addToRefs} data-transition-class="fadeInY">
+                    I build a structured, easy to use, and well-planned web application that will boost your site visitor retention and engagement.
+                    </p>
 
                     <a href={resume} download="jeffreyLustica-resume" className={`hero__btn fadeLeft`} ref={addToRefs} data-transition-class="fadeInX">Download CV<FontAwesomeIcon icon={faFileArrowDown} className="hero__btn-icon" /> </a> 
             

@@ -60,7 +60,7 @@ export default function Contact() {
         <div className='contact' name="contact">
             {modal && <Modal closeModal = {closeModal}/>}
             <div className="container">
-                <p className="contact__message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cumque. Nemo </p>
+                <p className="contact__message">Just send me a message on the form below and I will get back to you as soon as I can.</p>
                 <div className="contact__actions">
                     <form ref={mergeRefs(form, addToRefs)} onSubmit={sendEmail} className="contact__left contact__form fadeBottom" data-transition-class="fadeInY">
                         <input type="text" placeholder="Name" name="user_name" required/>
@@ -74,7 +74,7 @@ export default function Contact() {
                     <div className="contact__right contact__links fadeRight" ref={addToRefs} data-transition-class="fadeInX" >
                         <p className="contact__option">or call me at </p>
                         <span className='contact__info'><FontAwesomeIcon className='contact__icon' icon={faPhone} />0906 007 8013</span>
-                        <span className='contact__info'><FontAwesomeIcon className='contact__icon' icon={faLocationDot} />080 Tenejero, Candaba, Pampanga</span>
+                        <span className='contact__info'><FontAwesomeIcon className='contact__icon' icon={faLocationDot} />Tenejero, Candaba, Pampanga</span>
                         
                         <div className="social__icons">
                             <a href="https://www.facebook.com/jeffrey.lustica.9" target="_blank" className="social__links">
