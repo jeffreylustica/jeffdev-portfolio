@@ -795,6 +795,25 @@ a {
   color: #44883e;
 }
 
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.read-more {
+  font-size: var(--fs-xs);
+  color: hsla(var(--clr-primary), 0.75);
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 1em;
+  align-self: flex-start;
+}
+.read-more:hover {
+  color: hsla(var(--clr-primary), 0.5);
+}
+
 .projects {
   padding: 6em 0 10em;
 }

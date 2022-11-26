@@ -24,7 +24,7 @@ export default function ProjectItem({data}) {
         <div className="projects__item fadeLeft" ref={addToRefs} data-transition-class="fadeInX">
             <div className="project__image-placeholder">
                 <img className='project__image' src={source} alt="" />
-                <a href={link} target="_blank" className="project__link">View Project <FontAwesomeIcon className="link__icon" icon={faArrowUpRightFromSquare}/></a>
+                <a href={link} target="_blank" rel="noreferrer" className="project__link">View Project <FontAwesomeIcon className="link__icon" icon={faArrowUpRightFromSquare}/></a>
             </div>
             <div className="content">
                 <h3 className="main-title">{mainTitle}</h3>

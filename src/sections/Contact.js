@@ -77,16 +77,16 @@ export default function Contact() {
                         <span className='contact__info'><FontAwesomeIcon className='contact__icon' icon={faLocationDot} />Tenejero, Candaba, Pampanga</span>
                         
                         <div className="social__icons">
-                            <a href="https://www.facebook.com/jeffrey.lustica.9" target="_blank" className="social__links">
+                            <a href="https://www.facebook.com/jeffrey.lustica.9" target="_blank"  rel="noreferrer"className="social__links">
                                 <FontAwesomeIcon className='social__icon' icon={faFacebookF} />
                             </a>
-                            <a href="https://www.linkedin.com/in/jeffrey-lustica-8178b5229" target="_blank"  className="social__links">
+                            <a href="https://www.linkedin.com/in/jeffrey-lustica-8178b5229" target="_blank"  rel="noreferrer" className="social__links">
                                 <FontAwesomeIcon className='social__icon' icon={faLinkedinIn} />
                             </a>
-                            <a href="https://github.com/jeffnew1" target="_blank" className="social__links">
+                            <a href="https://github.com/jeffnew1" target="_blank"  rel="noreferrer"className="social__links">
                                 <FontAwesomeIcon className='social__icon' icon={faGithub} />
                             </a>
-                            <a href="mailto:jefflustica@gmail.com" target={'_blank'} className="social__links">
+                            <a href="mailto:jefflustica@gmail.com" target="_blank" rel="noreferrer" className="social__links">
                                 <FontAwesomeIcon className='social__icon' icon={faEnvelope} />
                             </a>
                         </div>

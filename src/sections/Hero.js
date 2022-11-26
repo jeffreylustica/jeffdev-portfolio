@@ -17,7 +17,7 @@ function Hero(props, ref) {
                     </h1>
 
                     <p className={`intro-desc fadeBottom`} ref={addToRefs} data-transition-class="fadeInY">
-                    I build a structured, easy to use, and well-planned web application that will boost your site visitor retention and engagement.
+                    I build a structured, easy-to-use, and well-planned web application that will boost your site visitor engagement.
                     </p>
 
                     <a href={resume} download="jeffreyLustica-resume" className={`hero__btn fadeLeft`} ref={addToRefs} data-transition-class="fadeInX">Download CV<FontAwesomeIcon icon={faFileArrowDown} className="hero__btn-icon" /> </a> 

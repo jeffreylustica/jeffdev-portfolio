@@ -116,4 +116,24 @@
     }
 }
 
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.read-more {
+    font-size: var(--fs-xs);
+    color: hsla(var(--clr-primary), .75);
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 1em;
+    align-self: flex-start;
+
+    &:hover {
+        color: hsla(var(--clr-primary), .5);
+    }
+}
+
 
