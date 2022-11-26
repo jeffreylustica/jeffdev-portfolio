@@ -1,5 +1,5 @@
 import React from 'react'
-import resume from '../files/jeffrey.f.lustica-resume.pdf'
+import resume from '../files/jeffrey-lustica-resume.pdf'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faFileArrowDown} from '@fortawesome/free-solid-svg-icons'
 import useObserver from '../hooks/useObserver'
