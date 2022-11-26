@@ -79,7 +79,7 @@
     }
     
     &__desc {
-        font-size: var(--fs-xs);
+        font-size: var(--fs-small);
         margin-bottom: 0;
     }
 
@@ -118,13 +118,13 @@
 
 .line-clamp {
     display: -webkit-box;
-    -webkit-line-clamp: 5;
+    -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
 
 .read-more {
-    font-size: var(--fs-xs);
+    font-size: var(--fs-small);
     color: hsla(var(--clr-primary), .75);
     cursor: pointer;
     display: inline-block;

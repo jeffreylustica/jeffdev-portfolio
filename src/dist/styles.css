@@ -767,7 +767,7 @@ a {
   font-weight: var(--fw-medium);
 }
 .brand__desc {
-  font-size: var(--fs-xs);
+  font-size: var(--fs-small);
   margin-bottom: 0;
 }
 .brand__html {
@@ -797,13 +797,13 @@ a {
 
 .line-clamp {
   display: -webkit-box;
-  -webkit-line-clamp: 5;
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
 
 .read-more {
-  font-size: var(--fs-xs);
+  font-size: var(--fs-small);
   color: hsla(var(--clr-primary), 0.75);
   cursor: pointer;
   display: inline-block;
