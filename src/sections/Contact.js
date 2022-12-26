@@ -83,7 +83,7 @@ export default function Contact() {
                             <a href="https://www.linkedin.com/in/jeffrey-lustica-8178b5229" target="_blank"  rel="noreferrer" className="social__links">
                                 <FontAwesomeIcon className='social__icon' icon={faLinkedinIn} />
                             </a>
-                            <a href="https://github.com/jeffnew1" target="_blank"  rel="noreferrer"className="social__links">
+                            <a href="https://github.com/jeffreylustica" target="_blank"  rel="noreferrer"className="social__links">
                                 <FontAwesomeIcon className='social__icon' icon={faGithub} />
                             </a>
                             <a href="mailto:jefflustica@gmail.com" target="_blank" rel="noreferrer" className="social__links">
