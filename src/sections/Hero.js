@@ -20,7 +20,7 @@ function Hero(props, ref) {
                     I build a structured, easy-to-use, and well-planned web application that will boost your site visitor engagement.
                     </p>
 
-                    <a href={resume} download="jeffreyLustica-resume" className={`hero__btn fadeLeft`} ref={addToRefs} data-transition-class="fadeInX">Download CV<FontAwesomeIcon icon={faFileArrowDown} className="hero__btn-icon" /> </a> 
+                    <a href={resume} download="jeffrey-lustica-resume" className={`hero__btn fadeLeft`} ref={addToRefs} data-transition-class="fadeInX">Download CV<FontAwesomeIcon icon={faFileArrowDown} className="hero__btn-icon" /> </a> 
             
                     <span className="hero__explore">More about me</span>
                 </div>
