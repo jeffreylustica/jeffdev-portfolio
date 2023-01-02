@@ -23,7 +23,7 @@ export default function Featured() {
                         <span>API</span>
                         <span>Git</span>
                     </div>
-                    <a href="https://jeffnew1.github.io/react-movie-watchlist/" target={`_blank`} rel="noreferrer" className="featured__link">View Project <FontAwesomeIcon className="link__icon" icon={faArrowUpRightFromSquare}/>
+                    <a href="https://jeffreylustica.github.io/react-movie-watchlist/" target={`_blank`} rel="noreferrer" className="featured__link">View Project <FontAwesomeIcon className="link__icon" icon={faArrowUpRightFromSquare}/>
                     </a>
                 </div>
 
